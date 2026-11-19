@@ -1,0 +1,2266 @@
+2026-11-18 15:38:29,371 | INFO | ============================================================
+2026-11-18 15:38:29,403 | INFO | STARTING: Audio transcription
+2026-11-18 15:38:29,403 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\audio_processor.py D:\AI Journey\LocalVideoAI\input\podcast.mp4
+2026-11-18 15:39:44,643 | INFO | 
+===== AUDIO EXTRACTION =====
+Audio extracted: D:\AI Journey\LocalVideoAI\output\audio\podcast.wav
+
+===== SPEECH TRANSCRIPTION =====
+Loading Whisper Small INT8 model...
+Whisper model loaded.
+Starting transcription...
+[0.00s - 5.76s] I want simple, lazy, 10 minute rule, which I can follow for next 30 days and I can become
+[5.76s - 7.04s] a great communicator.
+[7.08s - 9.02s] If you're lazy, you're probably not going to follow for 30 days.
+[9.44s - 9.62s] Okay.
+[9.80s - 10.00s] Okay.
+[10.22s - 11.96s] I'm just saying mid-lazy.
+[12.28s - 12.68s] Yeah.
+[12.94s - 12.98s] Yeah.
+[13.16s - 14.42s] I only have 10 minutes a day.
+[14.94s - 17.56s] I can practice something for 10 minutes a day for next 30 days.
+[17.80s - 19.12s] Maybe it can be a voice exercise.
+[19.38s - 20.22s] Maybe it can be something.
+[20.88s - 26.80s] If you have to make up a 30 day protocol, which is 10 minute for someone to go from
+[26.80s - 28.88s] this level of communication to this.
+[28.88s - 29.34s] Okay.
+[29.40s - 31.54s] What would be the 10 minute exercise look like?
+[34.36s - 43.24s] I'd give them the challenge of recording a video every single day for that month and
+[43.24s - 46.20s] that video's got to be a three minute video.
+[46.44s - 46.76s] That's it.
+[47.08s - 47.34s] Now, right?
+[47.58s - 51.02s] And why am I only using three of the 10 minutes is because the rest of it you're
+[51.02s - 52.92s] using reviewing the video from the day before.
+[53.64s - 54.08s] Okay.
+[54.44s - 57.86s] So, example, the first time you do it, just record a three minute video of you
+[57.86s - 58.16s] speaking.
+[58.94s - 62.72s] And speak about a topic in an area that you need to speak about often.
+[63.38s - 63.74s] Okay.
+[63.82s - 64.66s] This time you're doing it.
+[64.80s - 65.48s] Don't do it random.
+[65.72s - 65.82s] Okay.
+[65.98s - 70.56s] So, if you're an engineer and you have to talk about how to integrate AI into
+[70.56s - 73.60s] your business now and you have to explain that to your team, spend that
+[73.60s - 76.46s] three minutes explaining a component of what you'd normally have to talk
+[76.46s - 76.66s] about.
+[77.06s - 77.66s] Do that.
+[78.14s - 78.42s] Okay.
+[78.56s - 79.14s] And then leave it.
+[79.60s - 83.16s] The next day, as you review it, pick one thing to improve.
+[83.30s - 85.68s] And then when you record the next video, the next day, just improve
+[85.68s - 86.18s] that one thing.
+[86.98s - 90.58s] It can be voice, it can be story, it can be word, it can be anything at all.
+[90.60s - 91.72s] And it's only allowed to be one thing.
+[92.72s - 95.14s] Because your brain's going to go, oh, I want to do seven.
+[95.86s - 97.42s] I've been talked about like 10, I'm going to do 10.
+[97.78s - 98.28s] Then guess what?
+[98.36s - 98.84s] You're not going to do it.
+[99.66s - 100.50s] Pick one thing.
+[100.70s - 100.74s] Okay.
+[100.76s - 101.60s] So, you go, oh, you know what?
+[101.84s - 102.96s] Simple, the one we've talked about already.
+[103.06s - 103.60s] Keep it simple, right?
+[103.88s - 105.06s] I speak too quietly.
+[105.44s - 105.54s] Okay.
+[105.62s - 105.72s] Cool.
+[106.14s - 106.38s] All right.
+[106.44s - 107.54s] It's got to be stronger volume now.
+[107.84s - 108.08s] All right.
+[108.08s - 109.30s] Next day, you record yourself again.
+[109.48s - 109.90s] More volume.
+[110.30s - 112.80s] Then when you watch yourself back, if the volume's not quite there,
+[112.96s - 113.92s] guess what you're doing the next day?
+[114.42s - 114.90s] Volume.
+[116.18s - 123.64s] You can't undo a habit that you've been repeating for the last 10 years in one day.
+[123.90s - 124.04s] True.
+[124.30s - 130.16s] That's not real, which leads to a false expectation, which guarantees disappointment, which means
+[130.16s - 130.54s] you give up.
+[131.24s - 132.82s] I'm trying to be real here with you.
+[133.10s - 135.96s] So I know you're lazy, not you, and we're talking to the mid-lazy person.
+[136.46s - 138.94s] I know you're mid-lazy, but just stick to this.
+[139.30s - 144.12s] And even if that whole month, I've trained a CEO of a billion-dollar company, okay?
+[144.46s - 148.16s] And I had him do volume for nearly six weeks, and he questioned me.
+[148.20s - 150.82s] He even said, I'm not paying you for this.
+[151.92s - 152.78s] This is stupid.
+[153.88s - 154.06s] Right?
+[154.40s - 154.94s] I said, that's okay.
+[155.04s - 155.54s] I'll refund you.
+[155.58s - 155.96s] I don't care.
+[156.52s - 159.10s] If you want to go through behavioral change, then pick somebody else, but this is how
+[159.10s - 163.80s] I do it because you speak way too softly and you want more influence until you
+[163.80s - 164.20s] master this.
+[164.32s - 164.98s] We're not going to the next.
+[165.40s - 168.94s] So just know that even though you're mid-lazy and you may not be the CEO of a billion-dollar
+[168.94s - 171.92s] company, that's how I share and treat and teach all my students.
+[172.44s - 174.70s] One thing at a time, right?
+[174.94s - 178.52s] And then when you are satisfied with volume, then pick one more thing.
+[179.50s - 183.40s] Now the next thing you look at, you go, oh, man, I don't move my face.
+[184.50s - 185.88s] I don't move it at all.
+[186.70s - 187.04s] Great.
+[187.44s - 191.00s] Now the next one, you have to match your face with the emotion that you're communicating.
+[191.48s - 192.72s] So if you're exciting, show excitement.
+[192.80s - 193.68s] If you're sad, show sadness.
+[193.68s - 195.00s] If you're frustrated, show frustrated.
+[195.74s - 196.12s] Why?
+[196.30s - 200.92s] Because when you're more emotionally clear with your communication, there's more clarity
+[200.92s - 203.20s] in the communication, right?
+[203.30s - 206.80s] Otherwise you go, oh, people don't know how I feel because you're not showing it, right?
+[207.28s - 207.92s] And that's all you do.
+[208.42s - 211.36s] And you'll find that by the end of the month, you may have been able to work on five
+[211.36s - 211.60s] things.
+[212.38s - 216.66s] And if you just change five things, it's going to change your life.
+[217.20s - 218.16s] And I'll use this.
+[218.68s - 219.74s] Can I bring the board back?
+[219.76s - 220.00s] Yeah.
+[220.00s - 226.94s] The craziest thing is that I love the analogy of like a golf ball, right?
+[227.06s - 227.84s] I don't play golf.
+[228.30s - 229.20s] I know nothing about golf.
+[229.30s - 230.24s] I know you've learned about it recently.
+[231.34s - 237.12s] But when you think about a golf ball, and I know you're enough about it, when you
+[237.12s - 239.70s] hit it, when you hit it, say, here.
+[241.00s - 243.90s] The difference between hitting it, I'll do an X so you can see, the difference
+[244.36s - 249.32s] between hitting it there and hitting it here.
+[249.80s - 253.66s] So just a few millimeters away completely changes the trajectory of that ball.
+[253.78s - 254.10s] Yeah.
+[254.22s - 257.88s] Because if you hit it, if you hit it just at that green point, oh man,
+[257.94s - 259.26s] sometimes the ball goes like that.
+[259.76s - 263.40s] But you shift where you hit it just by a few millimeters and then the shot
+[263.40s - 264.00s] goes like that.
+[264.50s - 265.82s] That's communication skills.
+[266.58s - 269.52s] The smallest changes create the biggest differences.
+[270.18s - 273.38s] So don't go, oh, I'm only going to change five things by the end of the
+[273.38s - 276.60s] month. I'm still going to, no, people won't recognize you if you
+[276.60s - 279.26s] changed five small habits in the way that you communicate.
+[279.78s - 281.54s] Imagine you got rid of the ums and the rs.
+[281.70s - 283.34s] Imagine you spoke with a stronger volume.
+[283.68s - 285.72s] And now imagine you emote more with your face when you speak.
+[285.82s - 289.44s] You've got larger gesture vocabulary and you've got a great posture
+[289.44s - 290.52s] when you're meeting people.
+[291.52s - 293.12s] I have better storytelling skills.
+[293.42s - 296.10s] That's six, but sure, you'll change your life.
+[297.04s - 299.08s] Because now you know how to use your instrument.
+[299.62s - 301.36s] You now know how to, and I like this.
+[301.50s - 303.18s] I call my students luminaries.
+[303.44s - 305.10s] I call you a luminary, well, right?
+[305.10s - 307.26s] And I like to say you're a luminary of mine.
+[307.38s - 311.14s] I claim Raj, because what are you doing with your instrument now?
+[311.68s - 313.00s] Raj, you're changing the world, man.
+[314.14s - 314.76s] You are.
+[315.32s - 318.00s] And you having this conversation with me, what are you doing with me?
+[318.56s - 323.14s] You've given me a platform to shine my light as you shine your light.
+[323.72s - 325.64s] So why do I call my students luminaries?
+[326.12s - 328.00s] Well, because you are a source of light.
+[328.56s - 330.48s] So that as you learn how to play your instrument,
+[330.58s - 334.04s] as you learn how to use these gifts and talents that you have access to,
+[334.04s - 336.22s] man, you're shining a light out into the world.
+[336.40s - 339.82s] And we always complain the world is getting darker,
+[339.98s - 341.18s] is not as good as it can be.
+[341.74s - 342.78s] Well, then brighten it up.
+[344.93s - 347.43s] You can do it in a single conversation with another human being
+[347.43s - 348.59s] that you meet out on the street.
+[349.55s - 352.07s] By using melody in your voice and a little bit of volume,
+[352.17s - 353.37s] you can energize someone's day.
+[354.47s - 356.03s] Don't discount the ripple of that.
+[357.39s - 359.47s] And if you feel like you're that person that,
+[359.65s - 361.09s] oh, I've got so much to give in the world,
+[362.07s - 364.67s] don't go through this life, not shining as brightly as you can.
+[364.67s - 368.05s] Don't wait for other people to come and find and discover your gifts and talents.
+[368.41s - 370.63s] Shine so brightly, they can't ignore you.
+[371.47s - 374.95s] And I believe that is, as we all come together and shine our lights beautifully,
+[375.21s - 376.15s] we'll change the world, man.
+[376.67s - 377.23s] And you are.
+[377.75s - 378.97s] And I'm so proud of what you've achieved.
+[379.47s - 380.25s] Thank you so much.
+[380.31s - 380.75s] So are you.
+[381.05s - 381.19s] Yeah.
+[381.29s - 381.63s] And thank you.
+[381.67s - 382.21s] So are you doing it.
+[382.47s - 382.75s] Thank you.
+[382.81s - 385.51s] Thank you so much for watching this video till the end.
+[385.85s - 390.03s] If you would like to watch more informational and educational clips like this,
+[390.35s - 392.11s] please follow Rajshamani Cliffs Channel
+[392.11s - 396.33s] and share this video with someone who you think would like to learn more.
+
+===== TRANSCRIPT SAVING =====
+JSON: D:\AI Journey\LocalVideoAI\output\transcripts\podcast.json
+TXT: D:\AI Journey\LocalVideoAI\output\transcripts\podcast.txt
+
+Processing completed successfully.
+
+2026-11-18 15:39:44,644 | INFO | COMPLETED: Audio transcription (75.24 seconds)
+2026-11-18 15:39:44,645 | INFO | ============================================================
+2026-11-18 15:39:44,645 | INFO | STARTING: Frame sampling
+2026-11-18 15:39:44,645 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_sampler.py D:\AI Journey\LocalVideoAI\input\podcast.mp4 --interval 2
+2026-11-18 15:39:46,771 | INFO | Extracting representative video frames...
+Successfully extracted 198 frames.
+frame_001.jpg -> 0.00 seconds
+frame_002.jpg -> 2.00 seconds
+frame_003.jpg -> 4.00 seconds
+frame_004.jpg -> 6.00 seconds
+frame_005.jpg -> 8.00 seconds
+frame_006.jpg -> 10.00 seconds
+frame_007.jpg -> 12.00 seconds
+frame_008.jpg -> 14.00 seconds
+frame_009.jpg -> 16.00 seconds
+frame_010.jpg -> 18.00 seconds
+frame_011.jpg -> 20.00 seconds
+frame_012.jpg -> 22.00 seconds
+frame_013.jpg -> 24.00 seconds
+frame_014.jpg -> 26.00 seconds
+frame_015.jpg -> 28.00 seconds
+frame_016.jpg -> 30.00 seconds
+frame_017.jpg -> 32.00 seconds
+frame_018.jpg -> 34.00 seconds
+frame_019.jpg -> 36.00 seconds
+frame_020.jpg -> 38.00 seconds
+frame_021.jpg -> 40.00 seconds
+frame_022.jpg -> 42.00 seconds
+frame_023.jpg -> 44.00 seconds
+frame_024.jpg -> 46.00 seconds
+frame_025.jpg -> 48.00 seconds
+frame_026.jpg -> 50.00 seconds
+frame_027.jpg -> 52.00 seconds
+frame_028.jpg -> 54.00 seconds
+frame_029.jpg -> 56.00 seconds
+frame_030.jpg -> 58.00 seconds
+frame_031.jpg -> 60.00 seconds
+frame_032.jpg -> 62.00 seconds
+frame_033.jpg -> 64.00 seconds
+frame_034.jpg -> 66.00 seconds
+frame_035.jpg -> 68.00 seconds
+frame_036.jpg -> 70.00 seconds
+frame_037.jpg -> 72.00 seconds
+frame_038.jpg -> 74.00 seconds
+frame_039.jpg -> 76.00 seconds
+frame_040.jpg -> 78.00 seconds
+frame_041.jpg -> 80.00 seconds
+frame_042.jpg -> 82.00 seconds
+frame_043.jpg -> 84.00 seconds
+frame_044.jpg -> 86.00 seconds
+frame_045.jpg -> 88.00 seconds
+frame_046.jpg -> 90.00 seconds
+frame_047.jpg -> 92.00 seconds
+frame_048.jpg -> 94.00 seconds
+frame_049.jpg -> 96.00 seconds
+frame_050.jpg -> 98.00 seconds
+frame_051.jpg -> 100.00 seconds
+frame_052.jpg -> 102.00 seconds
+frame_053.jpg -> 104.00 seconds
+frame_054.jpg -> 106.00 seconds
+frame_055.jpg -> 108.00 seconds
+frame_056.jpg -> 110.00 seconds
+frame_057.jpg -> 112.00 seconds
+frame_058.jpg -> 114.00 seconds
+frame_059.jpg -> 116.00 seconds
+frame_060.jpg -> 118.00 seconds
+frame_061.jpg -> 120.00 seconds
+frame_062.jpg -> 122.00 seconds
+frame_063.jpg -> 124.00 seconds
+frame_064.jpg -> 126.00 seconds
+frame_065.jpg -> 128.00 seconds
+frame_066.jpg -> 130.00 seconds
+frame_067.jpg -> 132.00 seconds
+frame_068.jpg -> 134.00 seconds
+frame_069.jpg -> 136.00 seconds
+frame_070.jpg -> 138.00 seconds
+frame_071.jpg -> 140.00 seconds
+frame_072.jpg -> 142.00 seconds
+frame_073.jpg -> 144.00 seconds
+frame_074.jpg -> 146.00 seconds
+frame_075.jpg -> 148.00 seconds
+frame_076.jpg -> 150.00 seconds
+frame_077.jpg -> 152.00 seconds
+frame_078.jpg -> 154.00 seconds
+frame_079.jpg -> 156.00 seconds
+frame_080.jpg -> 158.00 seconds
+frame_081.jpg -> 160.00 seconds
+frame_082.jpg -> 162.00 seconds
+frame_083.jpg -> 164.00 seconds
+frame_084.jpg -> 166.00 seconds
+frame_085.jpg -> 168.00 seconds
+frame_086.jpg -> 170.00 seconds
+frame_087.jpg -> 172.00 seconds
+frame_088.jpg -> 174.00 seconds
+frame_089.jpg -> 176.00 seconds
+frame_090.jpg -> 178.00 seconds
+frame_091.jpg -> 180.00 seconds
+frame_092.jpg -> 182.00 seconds
+frame_093.jpg -> 184.00 seconds
+frame_094.jpg -> 186.00 seconds
+frame_095.jpg -> 188.00 seconds
+frame_096.jpg -> 190.00 seconds
+frame_097.jpg -> 192.00 seconds
+frame_098.jpg -> 194.00 seconds
+frame_099.jpg -> 196.00 seconds
+frame_100.jpg -> 198.00 seconds
+frame_101.jpg -> 200.00 seconds
+frame_102.jpg -> 202.00 seconds
+frame_103.jpg -> 204.00 seconds
+frame_104.jpg -> 206.00 seconds
+frame_105.jpg -> 208.00 seconds
+frame_106.jpg -> 210.00 seconds
+frame_107.jpg -> 212.00 seconds
+frame_108.jpg -> 214.00 seconds
+frame_109.jpg -> 216.00 seconds
+frame_110.jpg -> 218.00 seconds
+frame_111.jpg -> 220.00 seconds
+frame_112.jpg -> 222.00 seconds
+frame_113.jpg -> 224.00 seconds
+frame_114.jpg -> 226.00 seconds
+frame_115.jpg -> 228.00 seconds
+frame_116.jpg -> 230.00 seconds
+frame_117.jpg -> 232.00 seconds
+frame_118.jpg -> 234.00 seconds
+frame_119.jpg -> 236.00 seconds
+frame_120.jpg -> 238.00 seconds
+frame_121.jpg -> 240.00 seconds
+frame_122.jpg -> 242.00 seconds
+frame_123.jpg -> 244.00 seconds
+frame_124.jpg -> 246.00 seconds
+frame_125.jpg -> 248.00 seconds
+frame_126.jpg -> 250.00 seconds
+frame_127.jpg -> 252.00 seconds
+frame_128.jpg -> 254.00 seconds
+frame_129.jpg -> 256.00 seconds
+frame_130.jpg -> 258.00 seconds
+frame_131.jpg -> 260.00 seconds
+frame_132.jpg -> 262.00 seconds
+frame_133.jpg -> 264.00 seconds
+frame_134.jpg -> 266.00 seconds
+frame_135.jpg -> 268.00 seconds
+frame_136.jpg -> 270.00 seconds
+frame_137.jpg -> 272.00 seconds
+frame_138.jpg -> 274.00 seconds
+frame_139.jpg -> 276.00 seconds
+frame_140.jpg -> 278.00 seconds
+frame_141.jpg -> 280.00 seconds
+frame_142.jpg -> 282.00 seconds
+frame_143.jpg -> 284.00 seconds
+frame_144.jpg -> 286.00 seconds
+frame_145.jpg -> 288.00 seconds
+frame_146.jpg -> 290.00 seconds
+frame_147.jpg -> 292.00 seconds
+frame_148.jpg -> 294.00 seconds
+frame_149.jpg -> 296.00 seconds
+frame_150.jpg -> 298.00 seconds
+frame_151.jpg -> 300.00 seconds
+frame_152.jpg -> 302.00 seconds
+frame_153.jpg -> 304.00 seconds
+frame_154.jpg -> 306.00 seconds
+frame_155.jpg -> 308.00 seconds
+frame_156.jpg -> 310.00 seconds
+frame_157.jpg -> 312.00 seconds
+frame_158.jpg -> 314.00 seconds
+frame_159.jpg -> 316.00 seconds
+frame_160.jpg -> 318.00 seconds
+frame_161.jpg -> 320.00 seconds
+frame_162.jpg -> 322.00 seconds
+frame_163.jpg -> 324.00 seconds
+frame_164.jpg -> 326.00 seconds
+frame_165.jpg -> 328.00 seconds
+frame_166.jpg -> 330.00 seconds
+frame_167.jpg -> 332.00 seconds
+frame_168.jpg -> 334.00 seconds
+frame_169.jpg -> 336.00 seconds
+frame_170.jpg -> 338.00 seconds
+frame_171.jpg -> 340.00 seconds
+frame_172.jpg -> 342.00 seconds
+frame_173.jpg -> 344.00 seconds
+frame_174.jpg -> 346.00 seconds
+frame_175.jpg -> 348.00 seconds
+frame_176.jpg -> 350.00 seconds
+frame_177.jpg -> 352.00 seconds
+frame_178.jpg -> 354.00 seconds
+frame_179.jpg -> 356.00 seconds
+frame_180.jpg -> 358.00 seconds
+frame_181.jpg -> 360.00 seconds
+frame_182.jpg -> 362.00 seconds
+frame_183.jpg -> 364.00 seconds
+frame_184.jpg -> 366.00 seconds
+frame_185.jpg -> 368.00 seconds
+frame_186.jpg -> 370.00 seconds
+frame_187.jpg -> 372.00 seconds
+frame_188.jpg -> 374.00 seconds
+frame_189.jpg -> 376.00 seconds
+frame_190.jpg -> 378.00 seconds
+frame_191.jpg -> 380.00 seconds
+frame_192.jpg -> 382.00 seconds
+frame_193.jpg -> 384.00 seconds
+frame_194.jpg -> 386.00 seconds
+frame_195.jpg -> 388.00 seconds
+frame_196.jpg -> 390.00 seconds
+frame_197.jpg -> 392.00 seconds
+frame_198.jpg -> 394.00 seconds
+
+Frame sampling completed.
+Total frames: 198
+
+2026-11-18 15:39:46,772 | INFO | COMPLETED: Frame sampling (2.13 seconds)
+2026-11-18 15:39:46,773 | INFO | ============================================================
+2026-11-18 15:39:46,773 | INFO | STARTING: Visual frame analysis
+2026-11-18 15:39:46,773 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_analyzer.py D:\AI Journey\LocalVideoAI\output\frames\podcast --interval 2
+2026-11-18 17:18:15,241 | INFO | 
+Found 198 frames.
+Starting visual analysis...
+
+
+Processing frame 1/198 at 0.00s
+
+Analyzing image: frame_001.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 2/198 at 2.00s
+
+Analyzing image: frame_002.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 3/198 at 4.00s
+
+Analyzing image: frame_003.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 4/198 at 6.00s
+
+Analyzing image: frame_004.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 5/198 at 8.00s
+
+Analyzing image: frame_005.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 6/198 at 10.00s
+
+Analyzing image: frame_006.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 7/198 at 12.00s
+
+Analyzing image: frame_007.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 8/198 at 14.00s
+
+Analyzing image: frame_008.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 9/198 at 16.00s
+
+Analyzing image: frame_009.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 10/198 at 18.00s
+
+Analyzing image: frame_010.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 11/198 at 20.00s
+
+Analyzing image: frame_011.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 12/198 at 22.00s
+
+Analyzing image: frame_012.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 13/198 at 24.00s
+
+Analyzing image: frame_013.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 14/198 at 26.00s
+
+Analyzing image: frame_014.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 15/198 at 28.00s
+
+Analyzing image: frame_015.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 16/198 at 30.00s
+
+Analyzing image: frame_016.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 17/198 at 32.00s
+
+Analyzing image: frame_017.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 18/198 at 34.00s
+
+Analyzing image: frame_018.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 19/198 at 36.00s
+
+Analyzing image: frame_019.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 20/198 at 38.00s
+
+Analyzing image: frame_020.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 21/198 at 40.00s
+
+Analyzing image: frame_021.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 22/198 at 42.00s
+
+Analyzing image: frame_022.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 23/198 at 44.00s
+
+Analyzing image: frame_023.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 24/198 at 46.00s
+
+Analyzing image: frame_024.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 25/198 at 48.00s
+
+Analyzing image: frame_025.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 26/198 at 50.00s
+
+Analyzing image: frame_026.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 27/198 at 52.00s
+
+Analyzing image: frame_027.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 28/198 at 54.00s
+
+Analyzing image: frame_028.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 29/198 at 56.00s
+
+Analyzing image: frame_029.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 30/198 at 58.00s
+
+Analyzing image: frame_030.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 31/198 at 60.00s
+
+Analyzing image: frame_031.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 32/198 at 62.00s
+
+Analyzing image: frame_032.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 33/198 at 64.00s
+
+Analyzing image: frame_033.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 34/198 at 66.00s
+
+Analyzing image: frame_034.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 35/198 at 68.00s
+
+Analyzing image: frame_035.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 36/198 at 70.00s
+
+Analyzing image: frame_036.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 37/198 at 72.00s
+
+Analyzing image: frame_037.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 38/198 at 74.00s
+
+Analyzing image: frame_038.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 39/198 at 76.00s
+
+Analyzing image: frame_039.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 40/198 at 78.00s
+
+Analyzing image: frame_040.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 41/198 at 80.00s
+
+Analyzing image: frame_041.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 42/198 at 82.00s
+
+Analyzing image: frame_042.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 43/198 at 84.00s
+
+Analyzing image: frame_043.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 44/198 at 86.00s
+
+Analyzing image: frame_044.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 45/198 at 88.00s
+
+Analyzing image: frame_045.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 46/198 at 90.00s
+
+Analyzing image: frame_046.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 47/198 at 92.00s
+
+Analyzing image: frame_047.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 48/198 at 94.00s
+
+Analyzing image: frame_048.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 49/198 at 96.00s
+
+Analyzing image: frame_049.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 50/198 at 98.00s
+
+Analyzing image: frame_050.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 51/198 at 100.00s
+
+Analyzing image: frame_051.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 52/198 at 102.00s
+
+Analyzing image: frame_052.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 53/198 at 104.00s
+
+Analyzing image: frame_053.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 54/198 at 106.00s
+
+Analyzing image: frame_054.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 55/198 at 108.00s
+
+Analyzing image: frame_055.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 56/198 at 110.00s
+
+Analyzing image: frame_056.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 57/198 at 112.00s
+
+Analyzing image: frame_057.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 58/198 at 114.00s
+
+Analyzing image: frame_058.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 59/198 at 116.00s
+
+Analyzing image: frame_059.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 60/198 at 118.00s
+
+Analyzing image: frame_060.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 61/198 at 120.00s
+
+Analyzing image: frame_061.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 62/198 at 122.00s
+
+Analyzing image: frame_062.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 63/198 at 124.00s
+
+Analyzing image: frame_063.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 64/198 at 126.00s
+
+Analyzing image: frame_064.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 65/198 at 128.00s
+
+Analyzing image: frame_065.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 66/198 at 130.00s
+
+Analyzing image: frame_066.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 67/198 at 132.00s
+
+Analyzing image: frame_067.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 68/198 at 134.00s
+
+Analyzing image: frame_068.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 69/198 at 136.00s
+
+Analyzing image: frame_069.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 70/198 at 138.00s
+
+Analyzing image: frame_070.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 71/198 at 140.00s
+
+Analyzing image: frame_071.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 72/198 at 142.00s
+
+Analyzing image: frame_072.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 73/198 at 144.00s
+
+Analyzing image: frame_073.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 74/198 at 146.00s
+
+Analyzing image: frame_074.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 75/198 at 148.00s
+
+Analyzing image: frame_075.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 76/198 at 150.00s
+
+Analyzing image: frame_076.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 77/198 at 152.00s
+
+Analyzing image: frame_077.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 78/198 at 154.00s
+
+Analyzing image: frame_078.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 79/198 at 156.00s
+
+Analyzing image: frame_079.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 80/198 at 158.00s
+
+Analyzing image: frame_080.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 81/198 at 160.00s
+
+Analyzing image: frame_081.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 82/198 at 162.00s
+
+Analyzing image: frame_082.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 83/198 at 164.00s
+
+Analyzing image: frame_083.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 84/198 at 166.00s
+
+Analyzing image: frame_084.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 85/198 at 168.00s
+
+Analyzing image: frame_085.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 86/198 at 170.00s
+
+Analyzing image: frame_086.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 87/198 at 172.00s
+
+Analyzing image: frame_087.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 88/198 at 174.00s
+
+Analyzing image: frame_088.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 89/198 at 176.00s
+
+Analyzing image: frame_089.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 90/198 at 178.00s
+
+Analyzing image: frame_090.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 91/198 at 180.00s
+
+Analyzing image: frame_091.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 92/198 at 182.00s
+
+Analyzing image: frame_092.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 93/198 at 184.00s
+
+Analyzing image: frame_093.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 94/198 at 186.00s
+
+Analyzing image: frame_094.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 95/198 at 188.00s
+
+Analyzing image: frame_095.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 96/198 at 190.00s
+
+Analyzing image: frame_096.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 97/198 at 192.00s
+
+Analyzing image: frame_097.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 98/198 at 194.00s
+
+Analyzing image: frame_098.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 99/198 at 196.00s
+
+Analyzing image: frame_099.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 100/198 at 198.00s
+
+Analyzing image: frame_100.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 101/198 at 200.00s
+
+Analyzing image: frame_101.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 102/198 at 202.00s
+
+Analyzing image: frame_102.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 103/198 at 204.00s
+
+Analyzing image: frame_103.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 104/198 at 206.00s
+
+Analyzing image: frame_104.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 105/198 at 208.00s
+
+Analyzing image: frame_105.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 106/198 at 210.00s
+
+Analyzing image: frame_106.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 107/198 at 212.00s
+
+Analyzing image: frame_107.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 108/198 at 214.00s
+
+Analyzing image: frame_108.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 109/198 at 216.00s
+
+Analyzing image: frame_109.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 110/198 at 218.00s
+
+Analyzing image: frame_110.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 111/198 at 220.00s
+
+Analyzing image: frame_111.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 112/198 at 222.00s
+
+Analyzing image: frame_112.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 113/198 at 224.00s
+
+Analyzing image: frame_113.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 114/198 at 226.00s
+
+Analyzing image: frame_114.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 115/198 at 228.00s
+
+Analyzing image: frame_115.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 116/198 at 230.00s
+
+Analyzing image: frame_116.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 117/198 at 232.00s
+
+Analyzing image: frame_117.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 118/198 at 234.00s
+
+Analyzing image: frame_118.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 119/198 at 236.00s
+
+Analyzing image: frame_119.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 120/198 at 238.00s
+
+Analyzing image: frame_120.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 121/198 at 240.00s
+
+Analyzing image: frame_121.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 122/198 at 242.00s
+
+Analyzing image: frame_122.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 123/198 at 244.00s
+
+Analyzing image: frame_123.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 124/198 at 246.00s
+
+Analyzing image: frame_124.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 125/198 at 248.00s
+
+Analyzing image: frame_125.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 126/198 at 250.00s
+
+Analyzing image: frame_126.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 127/198 at 252.00s
+
+Analyzing image: frame_127.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 128/198 at 254.00s
+
+Analyzing image: frame_128.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 129/198 at 256.00s
+
+Analyzing image: frame_129.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 130/198 at 258.00s
+
+Analyzing image: frame_130.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 131/198 at 260.00s
+
+Analyzing image: frame_131.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 132/198 at 262.00s
+
+Analyzing image: frame_132.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 133/198 at 264.00s
+
+Analyzing image: frame_133.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 134/198 at 266.00s
+
+Analyzing image: frame_134.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 135/198 at 268.00s
+
+Analyzing image: frame_135.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 136/198 at 270.00s
+
+Analyzing image: frame_136.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 137/198 at 272.00s
+
+Analyzing image: frame_137.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 138/198 at 274.00s
+
+Analyzing image: frame_138.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 139/198 at 276.00s
+
+Analyzing image: frame_139.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 140/198 at 278.00s
+
+Analyzing image: frame_140.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 141/198 at 280.00s
+
+Analyzing image: frame_141.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 142/198 at 282.00s
+
+Analyzing image: frame_142.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 143/198 at 284.00s
+
+Analyzing image: frame_143.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 144/198 at 286.00s
+
+Analyzing image: frame_144.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 145/198 at 288.00s
+
+Analyzing image: frame_145.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 146/198 at 290.00s
+
+Analyzing image: frame_146.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 147/198 at 292.00s
+
+Analyzing image: frame_147.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 148/198 at 294.00s
+
+Analyzing image: frame_148.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 149/198 at 296.00s
+
+Analyzing image: frame_149.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 150/198 at 298.00s
+
+Analyzing image: frame_150.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 151/198 at 300.00s
+
+Analyzing image: frame_151.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 152/198 at 302.00s
+
+Analyzing image: frame_152.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 153/198 at 304.00s
+
+Analyzing image: frame_153.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 154/198 at 306.00s
+
+Analyzing image: frame_154.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 155/198 at 308.00s
+
+Analyzing image: frame_155.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 156/198 at 310.00s
+
+Analyzing image: frame_156.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 157/198 at 312.00s
+
+Analyzing image: frame_157.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 158/198 at 314.00s
+
+Analyzing image: frame_158.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 159/198 at 316.00s
+
+Analyzing image: frame_159.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 160/198 at 318.00s
+
+Analyzing image: frame_160.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 161/198 at 320.00s
+
+Analyzing image: frame_161.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 162/198 at 322.00s
+
+Analyzing image: frame_162.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 163/198 at 324.00s
+
+Analyzing image: frame_163.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 164/198 at 326.00s
+
+Analyzing image: frame_164.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 165/198 at 328.00s
+
+Analyzing image: frame_165.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 166/198 at 330.00s
+
+Analyzing image: frame_166.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 167/198 at 332.00s
+
+Analyzing image: frame_167.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 168/198 at 334.00s
+
+Analyzing image: frame_168.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 169/198 at 336.00s
+
+Analyzing image: frame_169.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 170/198 at 338.00s
+
+Analyzing image: frame_170.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 171/198 at 340.00s
+
+Analyzing image: frame_171.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 172/198 at 342.00s
+
+Analyzing image: frame_172.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 173/198 at 344.00s
+
+Analyzing image: frame_173.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 174/198 at 346.00s
+
+Analyzing image: frame_174.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 175/198 at 348.00s
+
+Analyzing image: frame_175.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 176/198 at 350.00s
+
+Analyzing image: frame_176.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 177/198 at 352.00s
+
+Analyzing image: frame_177.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 178/198 at 354.00s
+
+Analyzing image: frame_178.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 179/198 at 356.00s
+
+Analyzing image: frame_179.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 180/198 at 358.00s
+
+Analyzing image: frame_180.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 181/198 at 360.00s
+
+Analyzing image: frame_181.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 182/198 at 362.00s
+
+Analyzing image: frame_182.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 183/198 at 364.00s
+
+Analyzing image: frame_183.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 184/198 at 366.00s
+
+Analyzing image: frame_184.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 185/198 at 368.00s
+
+Analyzing image: frame_185.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 186/198 at 370.00s
+
+Analyzing image: frame_186.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 187/198 at 372.00s
+
+Analyzing image: frame_187.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 188/198 at 374.00s
+
+Analyzing image: frame_188.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 189/198 at 376.00s
+
+Analyzing image: frame_189.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 190/198 at 378.00s
+
+Analyzing image: frame_190.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 191/198 at 380.00s
+
+Analyzing image: frame_191.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 192/198 at 382.00s
+
+Analyzing image: frame_192.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 193/198 at 384.00s
+
+Analyzing image: frame_193.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 194/198 at 386.00s
+
+Analyzing image: frame_194.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 195/198 at 388.00s
+
+Analyzing image: frame_195.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 196/198 at 390.00s
+
+Analyzing image: frame_196.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 197/198 at 392.00s
+
+Analyzing image: frame_197.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 198/198 at 394.00s
+
+Analyzing image: frame_198.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Visual analysis completed.
+Report saved: D:\AI Journey\LocalVideoAI\output\visual_analysis\podcast_visual_analysis.json
+
+Summary:
+Total frames: 198
+Successful: 198
+Failed: 0
+
+2026-11-18 17:18:15,242 | INFO | COMPLETED: Visual frame analysis (5908.47 seconds)
+2026-11-18 17:18:15,244 | INFO | ============================================================
+2026-11-18 17:18:15,244 | INFO | STARTING: AI highlight detection
+2026-11-18 17:18:15,244 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\highlight_detector.py D:\AI Journey\LocalVideoAI\output\transcripts\podcast.json --visual D:\AI Journey\LocalVideoAI\output\visual_analysis\podcast_visual_analysis.json
+2026-11-18 17:21:03,338 | INFO | 
+===== LOADING TRANSCRIPT =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== MULTIMODAL AI HIGHLIGHT DETECTION =====
+
+Preparing multimodal context...
+Visual frames: 198
+
+Sending context to Qwen3:4b...
+Analyzing speech and visual information...
+
+
+Rejected misleading highlight: You are changing the world
+Reason: The title 'You are changing the world' is a strong statement that does not match the actual spoken content 'You are.' The spoken content is a simple affirmation without any reference to changing the world. The reason provided ('Short, powerful affirmation that directly addresses the listener's potential impact') is also inaccurate as the speech does not mention potential impact or changing the world.
+
+===== DETECTED HIGHLIGHTS =====
+
+Highlight #1
+Title: You are a source of light
+Time: 326.12s - 328.0s
+Category: motivational
+Score: 9
+Reason: Simple, profound statement that connects the listener to their inherent value
+Transcript: Well, because you are a source of light.
+
+Highlight #2
+Title: Don't wait for others to discover your gifts
+Time: 364.67s - 368.05s
+Category: motivational
+Score: 9
+Reason: Strong call to action that addresses a common delay in self-expression
+Transcript: Don't wait for other people to come and find and discover your gifts and talents.
+
+Highlight #3
+Title: Giving a platform to shine your light
+Time: 318.56s - 323.14s
+Category: motivational
+Score: 8
+Reason: Clear metaphor about how the speaker's interaction provides the listener with opportunity to impact others
+Transcript: You've given me a platform to shine my light as you shine your light.
+
+Highlight #4
+Title: Why I call students luminaries
+Time: 323.72s - 325.64s
+Category: educational
+Score: 8
+Reason: Direct question that leads to a meaningful explanation about the listener's potential
+Transcript: So why do I call my students luminaries?
+
+Highlight #5
+Title: Single conversation can change the world
+Time: 344.93s - 348.59s
+Category: motivational
+Score: 8
+Reason: Specific, actionable insight about the power of brief interactions
+Transcript: You can do it in a single conversation with another human being that you meet out on the street.
+
+Highlight #6
+Title: You have so much to give in the world
+Time: 357.39s - 364.67s
+Category: emotional
+Score: 8
+Reason: Emotional statement that encourages self-actualization without delay
+Transcript: And if you feel like you're that person that, oh, I've got so much to give in the world, don't go through this life, not shining as brightly as you can.
+
+Highlight #7
+Title: Together we change the world
+Time: 371.47s - 376.15s
+Category: motivational
+Score: 8
+Reason: Collective vision that emphasizes unity and shared impact
+Transcript: And I believe that is, as we all come together and shine our lights beautifully, we'll change the world, man.
+
+Highlight #8
+Title: Proud of your achievements
+Time: 377.75s - 378.97s
+Category: emotional
+Score: 8
+Reason: Personal affirmation that validates the listener's progress
+Transcript: And I'm so proud of what you've achieved.
+
+Highlight #9
+Title: Shining light through talent and instrument
+Time: 328.56s - 336.22s
+Category: educational
+Score: 7
+Reason: Clear explanation of how developing skills leads to positive impact
+Transcript: So that as you learn how to play your instrument, as you learn how to use these gifts and talents that you have access to, man, you're shining a light out into the world.
+
+Highlight #10
+Title: Volume and melody energize someone's day
+Time: 349.55s - 353.37s
+Category: educational
+Score: 7
+Reason: Practical advice about communication techniques with clear benefits
+Transcript: By using melody in your voice and a little bit of volume, you can energize someone's day.
+
+===== SAVING RESULTS =====
+Saved: D:\AI Journey\LocalVideoAI\output\highlights\podcast_highlights.json
+
+Highlight detection completed.
+
+2026-11-18 17:21:03,340 | INFO | COMPLETED: AI highlight detection (168.09 seconds)
+2026-11-18 17:21:03,342 | INFO | ============================================================
+2026-11-18 17:21:03,343 | INFO | STARTING: Visual enrichment
+2026-11-18 17:21:03,343 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_enricher.py D:\AI Journey\LocalVideoAI\output\highlights\podcast_highlights.json D:\AI Journey\LocalVideoAI\output\visual_analysis\podcast_visual_analysis.json
+2026-11-18 17:21:03,513 | INFO | 
+===== LOADING HIGHLIGHTS =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== ENRICHING HIGHLIGHTS =====
+
+===== ENRICHMENT SUMMARY =====
+
+Highlight #1
+Title: You are a source of light
+Frames matched: 1
+Average visual interest: 7.0/10
+
+Highlight #2
+Title: Don't wait for others to discover your gifts
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #3
+Title: Giving a platform to shine your light
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #4
+Title: Why I call students luminaries
+Frames matched: 1
+Average visual interest: 7.0/10
+
+Highlight #5
+Title: Single conversation can change the world
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #6
+Title: You have so much to give in the world
+Frames matched: 4
+Average visual interest: 7.0/10
+
+Highlight #7
+Title: Together we change the world
+Frames matched: 3
+Average visual interest: 7.33/10
+
+Highlight #8
+Title: Proud of your achievements
+Frames matched: 1
+Average visual interest: 7.0/10
+
+Highlight #9
+Title: Shining light through talent and instrument
+Frames matched: 4
+Average visual interest: 7.0/10
+
+Highlight #10
+Title: Volume and melody energize someone's day
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\podcast_enriched.json
+
+2026-11-18 17:21:03,513 | INFO | COMPLETED: Visual enrichment (0.17 seconds)
+2026-11-18 17:21:03,515 | INFO | ============================================================
+2026-11-18 17:21:03,515 | INFO | STARTING: Semantic visual relevance
+2026-11-18 17:21:03,515 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_relevance.py D:\AI Journey\LocalVideoAI\output\enriched\podcast_enriched.json
+2026-11-18 17:30:00,229 | INFO | 
+===== LOADING ENRICHED HIGHLIGHTS =====
+
+===== ANALYZING SEMANTIC VISUAL RELEVANCE =====
+
+Analyzing: You are a source of light
+  Frame 1/1: frame_165.jpg
+    Relevance: 0/10
+
+Analyzing: Don't wait for others to discover your gifts
+  Frame 1/2: frame_184.jpg
+    Relevance: 0/10
+  Frame 2/2: frame_185.jpg
+    Relevance: 0/10
+
+Analyzing: Giving a platform to shine your light
+  Frame 1/2: frame_161.jpg
+    Relevance: 0/10
+  Frame 2/2: frame_162.jpg
+    Relevance: 0/10
+
+Analyzing: Why I call students luminaries
+  Frame 1/1: frame_163.jpg
+    Relevance: 0/10
+
+Analyzing: Single conversation can change the world
+  Frame 1/2: frame_174.jpg
+    Relevance: 0/10
+  Frame 2/2: frame_175.jpg
+    Relevance: 0/10
+
+Analyzing: You have so much to give in the world
+  Frame 1/4: frame_180.jpg
+    Relevance: 0/10
+  Frame 2/4: frame_181.jpg
+    Relevance: 0/10
+  Frame 3/4: frame_182.jpg
+    Relevance: 0/10
+  Frame 4/4: frame_183.jpg
+    Relevance: 0/10
+
+Analyzing: Together we change the world
+  Frame 1/3: frame_187.jpg
+    Relevance: 3/10
+  Frame 2/3: frame_188.jpg
+    Relevance: 6/10
+  Frame 3/3: frame_189.jpg
+    Relevance: 0/10
+
+Analyzing: Proud of your achievements
+  Frame 1/1: frame_190.jpg
+    Relevance: 0/10
+
+Analyzing: Shining light through talent and instrument
+  Frame 1/4: frame_166.jpg
+    Relevance: 6/10
+  Frame 2/4: frame_167.jpg
+    Relevance: 0/10
+  Frame 3/4: frame_168.jpg
+    Relevance: 3/10
+  Frame 4/4: frame_169.jpg
+    Relevance: 0/10
+
+Analyzing: Volume and melody energize someone's day
+  Frame 1/2: frame_176.jpg
+    Relevance: 6/10
+  Frame 2/2: frame_177.jpg
+    Relevance: 0/10
+
+===== ANALYSIS COMPLETED =====
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\podcast_semantic.json
+
+2026-11-18 17:30:00,230 | INFO | COMPLETED: Semantic visual relevance (536.71 seconds)
+2026-11-18 17:30:00,231 | INFO | ============================================================
+2026-11-18 17:30:00,231 | INFO | STARTING: Visual selection
+2026-11-18 17:30:00,231 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_selector.py D:\AI Journey\LocalVideoAI\output\enriched\podcast_semantic.json
+2026-11-18 17:30:00,411 | INFO | 
+===== LOADING SEMANTIC VISUAL ANALYSIS =====
+
+===== SELECTING DIVERSE VISUAL FRAMES =====
+
+Highlight: You are a source of light
+  Evaluated: 1 | Selected: 0
+
+Highlight: Don't wait for others to discover your gifts
+  Evaluated: 2 | Selected: 0
+
+Highlight: Giving a platform to shine your light
+  Evaluated: 2 | Selected: 0
+
+Highlight: Why I call students luminaries
+  Evaluated: 1 | Selected: 0
+
+Highlight: Single conversation can change the world
+  Evaluated: 2 | Selected: 0
+
+Highlight: You have so much to give in the world
+  Evaluated: 4 | Selected: 0
+
+Highlight: Together we change the world
+  Evaluated: 3 | Selected: 0
+
+Highlight: Proud of your achievements
+  Evaluated: 1 | Selected: 0
+
+Highlight: Shining light through talent and instrument
+  Evaluated: 4 | Selected: 0
+
+Highlight: Volume and melody energize someone's day
+  Evaluated: 2 | Selected: 0
+
+===== SELECTION COMPLETED =====
+Total selected frames: 0
+Saved: D:\AI Journey\LocalVideoAI\output\selected_visuals\podcast_selected_visuals.json
+
+2026-11-18 17:30:00,412 | INFO | COMPLETED: Visual selection (0.18 seconds)
+2026-11-18 17:30:00,413 | INFO | ============================================================
+2026-11-18 17:30:00,413 | INFO | STARTING: Final clip production
+2026-11-18 17:30:00,414 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\clip_pipeline.py D:\AI Journey\LocalVideoAI\input\podcast.mp4 D:\AI Journey\LocalVideoAI\output\transcripts\podcast.json D:\AI Journey\LocalVideoAI\output\selected_visuals\podcast_selected_visuals.json
+2026-11-18 17:31:33,838 | INFO | 
+===================================
+ LOCAL AI VIDEO CLIPPING PIPELINE
+===================================
+
+SOURCE VIDEO: podcast
+
+===== STEP 1: CLIP EXTRACTION =====
+
+Generating clip #1
+Title: You are a source of light
+Time: 326.12s - 328.00s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\01_You_are_a_source_of_light.mp4
+Selected visuals: 0
+
+Generating clip #2
+Title: Don't wait for others to discover your gifts
+Time: 364.67s - 368.05s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\02_Don't_wait_for_others_to_discover_your_gifts.mp4
+Selected visuals: 0
+
+Generating clip #3
+Title: Giving a platform to shine your light
+Time: 318.56s - 323.14s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\03_Giving_a_platform_to_shine_your_light.mp4
+Selected visuals: 0
+
+Generating clip #4
+Title: Why I call students luminaries
+Time: 323.72s - 325.64s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\04_Why_I_call_students_luminaries.mp4
+Selected visuals: 0
+
+Generating clip #5
+Title: Single conversation can change the world
+Time: 344.93s - 348.59s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\05_Single_conversation_can_change_the_world.mp4
+Selected visuals: 0
+
+Generating clip #6
+Title: You have so much to give in the world
+Time: 357.39s - 364.67s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\06_You_have_so_much_to_give_in_the_world.mp4
+Selected visuals: 0
+
+Generating clip #7
+Title: Together we change the world
+Time: 371.47s - 376.15s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\07_Together_we_change_the_world.mp4
+Selected visuals: 0
+
+Generating clip #8
+Title: Proud of your achievements
+Time: 377.75s - 378.97s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\08_Proud_of_your_achievements.mp4
+Selected visuals: 0
+
+Generating clip #9
+Title: Shining light through talent and instrument
+Time: 328.56s - 336.22s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\09_Shining_light_through_talent_and_instrument.mp4
+Selected visuals: 0
+
+Generating clip #10
+Title: Volume and melody energize someone's day
+Time: 349.55s - 353.37s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\podcast\10_Volume_and_melody_energize_someone's_day.mp4
+Selected visuals: 0
+
+===== PROCESSING CLIP 1/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\01_You_are_a_source_of_light.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\01_You_are_a_source_of_light_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 57 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 2/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\02_Don't_wait_for_others_to_discover_your_gifts.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\02_Don't_wait_for_others_to_discover_your_gifts_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 102 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 3/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\03_Giving_a_platform_to_shine_your_light.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\03_Giving_a_platform_to_shine_your_light_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 138 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 4/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\04_Why_I_call_students_luminaries.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\04_Why_I_call_students_luminaries_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 58 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 5/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\05_Single_conversation_can_change_the_world.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\05_Single_conversation_can_change_the_world_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 110 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 6/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\06_You_have_so_much_to_give_in_the_world.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\06_You_have_so_much_to_give_in_the_world_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 219 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 7/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\07_Together_we_change_the_world.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\07_Together_we_change_the_world_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 141 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 8/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\08_Proud_of_your_achievements.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\08_Proud_of_your_achievements_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 37 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 9/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\09_Shining_light_through_talent_and_instrument.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\09_Shining_light_through_talent_and_instrument_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 230 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 10/10 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\podcast\10_Volume_and_melody_energize_someone's_day.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\podcast\10_Volume_and_melody_energize_someone's_day_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: ANIMATED SUBTITLE RENDERING
+
+Generating caption animation frames...
+Generated 115 overlay frames.
+
+Combining captions with video...
+
+===== SAVING PIPELINE RESULTS =====
+
+===== PIPELINE RESULTS SAVED =====
+D:\AI Journey\LocalVideoAI\output\pipeline_results\podcast_pipeline_results.json
+
+===== PIPELINE COMPLETED =====
+Source video: podcast
+Total final videos: 10
+
+===== FINAL PRODUCTION SUMMARY =====
+Total final videos: 10
+
+Title: You are a source of light
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\01_You_are_a_source_of_light_final.mp4
+Duration: 1.88
+Category: motivational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\01_You_are_a_source_of_light.mp4
+
+Title: Don't wait for others to discover your gifts
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\02_Don't_wait_for_others_to_discover_your_gifts_final.mp4
+Duration: 3.4
+Category: motivational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\02_Don't_wait_for_others_to_discover_your_gifts.mp4
+
+Title: Giving a platform to shine your light
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\03_Giving_a_platform_to_shine_your_light_final.mp4
+Duration: 4.6
+Category: motivational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\03_Giving_a_platform_to_shine_your_light.mp4
+
+Title: Why I call students luminaries
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\04_Why_I_call_students_luminaries_final.mp4
+Duration: 1.92
+Category: educational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\04_Why_I_call_students_luminaries.mp4
+
+Title: Single conversation can change the world
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\05_Single_conversation_can_change_the_world_final.mp4
+Duration: 3.68
+Category: motivational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\05_Single_conversation_can_change_the_world.mp4
+
+Title: You have so much to give in the world
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\06_You_have_so_much_to_give_in_the_world_final.mp4
+Duration: 7.28
+Category: emotional
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\06_You_have_so_much_to_give_in_the_world.mp4
+
+Title: Together we change the world
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\07_Together_we_change_the_world_final.mp4
+Duration: 4.68
+Category: motivational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\07_Together_we_change_the_world.mp4
+
+Title: Proud of your achievements
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\08_Proud_of_your_achievements_final.mp4
+Duration: 1.24
+Category: emotional
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\08_Proud_of_your_achievements.mp4
+
+Title: Shining light through talent and instrument
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\09_Shining_light_through_talent_and_instrument_final.mp4
+Duration: 7.68
+Category: educational
+Score: 7
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\09_Shining_light_through_talent_and_instrument.mp4
+
+Title: Volume and melody energize someone's day
+Final video: D:\AI Journey\LocalVideoAI\output\animated_subtitles\10_Volume_and_melody_energize_someone's_day_final.mp4
+Duration: 3.84
+Category: educational
+Score: 7
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\podcast\10_Volume_and_melody_energize_someone's_day.mp4
+
+Pipeline completed.
+
+2026-11-18 17:31:33,839 | INFO | COMPLETED: Final clip production (93.42 seconds)
+2026-11-18 17:31:33,847 | INFO | Processing report: D:\AI Journey\LocalVideoAI\output\pipeline_results\podcast_full_pipeline_report.json
+2026-11-18 17:31:33,848 | INFO | ============================================================
+2026-11-18 17:31:33,848 | INFO | FULL PIPELINE COMPLETED SUCCESSFULLY
+2026-11-18 17:31:33,849 | INFO | Total processing time: 6784.47 seconds

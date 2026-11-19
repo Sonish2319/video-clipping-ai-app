@@ -1,0 +1,8 @@
+.venv/
+.venv
+.venv/*
+output/
+generate_test_speech.ps1
+back_highlight_generator.py
+test-assets/
+input/
