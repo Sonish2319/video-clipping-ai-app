@@ -9,10 +9,12 @@ class OllamaClient:
     def __init__(
         self,
         model="qwen3:4b",
-        base_url="http://localhost:11434"
+        base_url="http://localhost:11434",
+        num_ctx=16384
     ):
         self.model = model
         self.base_url = base_url.rstrip("/")
+        self.num_ctx = num_ctx
 
     def generate(self, prompt):
 
@@ -24,7 +26,8 @@ class OllamaClient:
             "stream": False,
             "think": False,
             "options": {
-                "temperature": 0.2
+                "temperature": 0.2,
+                "num_ctx": self.num_ctx
             }
         }
 
@@ -66,7 +69,8 @@ class OllamaClient:
             "think": False,
             "format": "json",
             "options": {
-                "temperature": 0.2
+                "temperature": 0.2,
+                "num_ctx": self.num_ctx
             }
         }
 

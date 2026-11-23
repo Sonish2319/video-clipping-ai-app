@@ -22,7 +22,7 @@ class FrameAnalyzer:
             exist_ok=True
         )
 
-    def analyze_frames(self, frame_directory, interval=5):
+    def analyze_frames(self, frame_directory, interval=None):
 
         frame_directory = Path(frame_directory)
 
@@ -34,6 +34,19 @@ class FrameAnalyzer:
         if not frame_directory.exists():
             raise FileNotFoundError(frame_directory)
 
+        info_file = frame_directory / "sampling_info.json"
+        if (interval is None or interval <= 0) and info_file.exists():
+            try:
+                with open(info_file, "r", encoding="utf-8") as f:
+                    meta = json.load(f)
+                    interval = int(meta.get("sampling_interval", 5))
+                    print(f"Auto-detected sampling interval from metadata: {interval}s")
+            except Exception:
+                interval = 5
+
+        if interval is None or interval <= 0:
+            interval = 5
+
         frames = sorted(frame_directory.glob("frame_*.jpg"))
 
         if not frames:
@@ -41,7 +54,7 @@ class FrameAnalyzer:
 
         video_name = frame_directory.name
 
-        print(f"\nFound {len(frames)} frames.")
+        print(f"\nFound {len(frames)} frames (sampling interval: {interval}s).")
         print("Starting visual analysis...\n")
 
         results = []
@@ -125,7 +138,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--interval",
         type=int,
-        default=5
+        default=0,
+        help="Frame sampling interval in seconds (default: 0 to auto-detect from sampling_info.json or use 5)"
     )
 
     args = parser.parse_args()

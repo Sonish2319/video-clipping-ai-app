@@ -63,14 +63,10 @@ class VisualRelevanceAnalyzer:
         9-10: Direct and unmistakable representation.
 
         IMPORTANT:
-        - Similar appearance does not mean identical subject.
-        - A stupa with triangular architectural shapes is NOT
-        evidence of Nepal's triangular national flag.
-        - Buddhist architecture is NOT evidence of the Bikram Sambat calendar.
-        - A generic mountain is NOT Mount Everest.
-        - A generic river valley is NOT automatically the Kaligandaki Gorge.
-        - Do not award a high score based only on cultural,
-        geographical, or geometric similarity.
+        - Base this score purely on what is visibly present in the frame.
+        - Superficial or accidental similarity does not mean a topic match.
+        - In talking-head or podcast videos, the speaker visible on camera talking provides a natural anchor, but topic_match_score measures whether the specific topic/entity being talked about is shown.
+        - Generic scenery or unrelated backgrounds without visible connection must receive low topic match scores (0-3).
 
         DIMENSION 2: CONTEXTUAL MATCH
 
@@ -79,24 +75,11 @@ class VisualRelevanceAnalyzer:
 
         0-2: No useful contextual connection.
         3-5: General background or indirect association.
-        6-8: Strong supporting context.
+        6-8: Strong supporting context (e.g., studio setting supporting a conversation, screen recording supporting a tech demo, gym setting supporting fitness).
         9-10: Highly relevant contextual representation.
 
         Consider geographical, historical, cultural, environmental,
         and situational context ONLY when supported by visible evidence.
-
-        Examples:
-        - Nepal flag with snowy Himalayan mountains supports
-        a discussion about Mount Everest.
-        - An identifiable heritage site in Lumbini supports
-        a discussion about Buddha's birthplace.
-        - A deep river gorge supports a discussion about
-        geographical features such as the Kaligandaki Gorge.
-        - General Buddhist architecture does not support
-        a discussion about Nepal's calendar.
-
-        Do not assume a connection merely because two subjects
-        belong to the same country or culture.
 
         DIMENSION 3: VISUAL CONTRADICTION
 
@@ -160,47 +143,33 @@ class VisualRelevanceAnalyzer:
             explain what cannot be confirmed.
 
         ==================================================
-        EXAMPLES
+        UNIVERSAL EXAMPLES ACROSS VIDEO GENRES
         ==================================================
 
-        Mount Everest + Nepal flag + snowy Himalayan mountains:
-        High contextual match.
-        The frame supports the Himalayan geographical context,
-        but does not prove that Everest itself is visible.
+        1. Educational / Tech Tutorial:
+           Speech: "Using Python list comprehensions to filter data efficiently."
+           Visual: Screen capture showing Python code in an editor.
+           -> High topic match (9-10), high contextual match (9-10), contradiction: 0.
 
-        Mount Everest + unrelated Buddhist stupa:
-        Low topic match and low contextual match.
+        2. Podcast / Interview Discussion:
+           Speech: "Building consistent habits requires doing 10 minutes every single day."
+           Visual: Host and guest speaking at a table with studio microphones.
+           -> Moderate topic match (3-4), high contextual match (7-8), contradiction: 0.
 
-        Nepal national flag + actual Nepal national flag:
-        High topic match.
+        3. Misleading / Unrelated Scenery:
+           Speech: "The company reported quarterly revenue growth in European markets."
+           Visual: Unrelated mountain landscape with clouds.
+           -> Low topic match (0-1), low contextual match (1-2), contradiction: 3.
 
-        Nepal national flag + Buddhist prayer flags:
-        Low topic match.
-        Similar colors or flag-like appearance are insufficient.
+        4. Practical Demonstration:
+           Speech: "Keep your back straight and feet shoulder-width apart when squatting."
+           Visual: Trainer demonstrating squat form in an exercise studio.
+           -> High topic match (9-10), high contextual match (9-10), contradiction: 0.
 
-        Nepal national flag + stupa with triangular architecture:
-        Low topic match.
-        Architectural shapes are not evidence of the national flag.
-
-        Buddha's birthplace + identifiable Lumbini heritage site:
-        High contextual match.
-
-        Bikram Sambat + unrelated Boudhanath Stupa:
-        Low topic match and low contextual match.
-
-        Kaligandaki Gorge + visible deep river gorge:
-        High contextual match if the geographical characteristics
-        support the spoken description.
-        Do not claim the exact gorge is identified unless evidence
-        establishes its identity.
-
-        Historical sovereignty + unrelated religious architecture:
-        Low topic match and low contextual match.
-        Architecture cannot demonstrate historical sovereignty.
-
-        Historical sovereignty + generic mountain landscape:
-        Low topic match.
-        Mountains cannot prove a historical claim.
+        5. Documentary / Archival:
+           Speech: "The historic treaty was signed in the grand hall of the palace."
+           Visual: Historical photograph or footage of leaders inside the ornate hall.
+           -> High topic match (8-9), high contextual match (9-10), contradiction: 0.
 
         ==================================================
         OUTPUT REQUIREMENTS

@@ -2,6 +2,7 @@
 import argparse
 import json
 import logging
+import os
 import subprocess
 import sys
 import time
@@ -9,16 +10,25 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+# Ensure UTF-8 output on Windows consoles
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 
 class FullVideoPipeline:
 
-    def __init__(self, video_path, frame_interval=2):
+    def __init__(self, video_path, frame_interval=None, min_duration=10.0, max_duration=20.0, subtitle_mode="animated"):
 
         self.project_root = Path(__file__).resolve().parents[2]
         self.video_path = Path(video_path).resolve()
 
         self.video_name = self.video_path.stem
-        self.frame_interval = frame_interval
+        self.frame_interval = int(frame_interval) if frame_interval is not None and int(frame_interval) > 0 else None
+        self.min_duration = float(min_duration)
+        self.max_duration = float(max_duration)
+        self.subtitle_mode = subtitle_mode
 
         self.core_dir = self.project_root / "app" / "core"
         self.output_dir = self.project_root / "output"
@@ -87,6 +97,53 @@ class FullVideoPipeline:
         }:
             raise ValueError("Unsupported video format.")
 
+    def get_video_duration(self):
+
+        command = [
+            "ffprobe",
+            "-v", "error",
+            "-show_entries", "format=duration",
+            "-of", "json",
+            str(self.video_path)
+        ]
+
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=True
+        )
+
+        data = json.loads(result.stdout)
+        return float(data["format"]["duration"])
+
+    @staticmethod
+    def calculate_dynamic_interval(duration_seconds):
+        """
+        Dynamically determine frame sampling interval based on video duration:
+        - <= 60s (under 1 min):   2s interval  (~15-30 frames, e.g. 50s -> 25 frames)
+        - <= 180s (1 - 3 mins):   5s interval  (~15-36 frames, e.g. 2 mins -> 24 frames)
+        - <= 360s (3 - 6 mins):   10s interval (~20-36 frames, e.g. 5 mins -> 30 frames)
+        - <= 900s (6 - 15 mins):  15s interval (~24-60 frames, e.g. 10 mins -> 40 frames)
+        - <= 1800s (15 - 30 mins): 25s interval (~36-72 frames, e.g. 20 mins -> 48 frames)
+        - > 1800s (> 30 mins):    30s - 60s interval (max ~60 frames)
+        """
+        d = float(duration_seconds)
+        if d <= 60:
+            return 2
+        elif d <= 180:
+            return 5
+        elif d <= 360:
+            return 10
+        elif d <= 900:
+            return 15
+        elif d <= 1800:
+            return 25
+        else:
+            return max(30, min(60, int(round(d / 45))))
+
     def run_command(self, stage, script, arguments):
 
         script_path = self.core_dir / script
@@ -106,11 +163,18 @@ class FullVideoPipeline:
 
         start_time = time.time()
 
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+        env["PYTHONUTF8"] = "1"
+
         result = subprocess.run(
             command,
             cwd=self.project_root,
             text=True,
-            capture_output=True
+            capture_output=True,
+            encoding="utf-8",
+            errors="replace",
+            env=env
         )
 
         elapsed = round(time.time() - start_time, 2)
@@ -193,6 +257,7 @@ class FullVideoPipeline:
                 "highlights": str(self.highlight_path),
                 "enriched_visuals": str(self.enriched_path),
                 "selected_visuals": str(self.selected_visuals_path),
+                "final_clips": str(self.output_dir / "final" / self.video_name),
                 "pipeline_results": str(
                     self.output_dir /
                     "pipeline_results" /
@@ -214,6 +279,22 @@ class FullVideoPipeline:
         try:
 
             self.validate()
+
+            video_dur = self.get_video_duration()
+            if self.frame_interval is None or self.frame_interval <= 0:
+                self.frame_interval = self.calculate_dynamic_interval(video_dur)
+                print(
+                    f"\nDynamic frame sampling interval: {self.frame_interval}s "
+                    f"(based on video duration {video_dur:.1f}s / {video_dur/60:.1f} mins)"
+                )
+                self.logger.info(
+                    "Dynamic frame interval selected: %ds (video duration: %.1fs)",
+                    self.frame_interval,
+                    video_dur
+                )
+            else:
+                print(f"\nManual frame sampling interval: {self.frame_interval}s")
+                self.logger.info("Manual frame interval specified: %ds", self.frame_interval)
 
             print("\n" + "=" * 65)
             print("LOCAL AI VIDEO CLIPPING - FULL PIPELINE")
@@ -266,7 +347,11 @@ class FullVideoPipeline:
                 [
                     self.transcript_path,
                     "--visual",
-                    self.visual_analysis_path
+                    self.visual_analysis_path,
+                    "--min-duration",
+                    self.min_duration,
+                    "--max-duration",
+                    self.max_duration
                 ]
             )
 
@@ -323,7 +408,9 @@ class FullVideoPipeline:
                 [
                     self.video_path,
                     self.transcript_path,
-                    self.selected_visuals_path
+                    self.selected_visuals_path,
+                    "--subtitle-mode",
+                    self.subtitle_mode
                 ]
             )
 
@@ -349,7 +436,8 @@ class FullVideoPipeline:
             )
 
             print("\nVIDEO PROCESSING COMPLETED!")
-            print(f"Results: {final_results}")
+            print(f"Final clipped videos with {self.subtitle_mode} subtitles: {self.output_dir / 'final' / self.video_name}")
+            print(f"Results summary: {final_results}")
 
         except Exception as error:
 
@@ -388,15 +476,39 @@ if __name__ == "__main__":
     parser.add_argument(
         "--interval",
         type=int,
-        default=2,
-        help="Frame sampling interval in seconds (default: 2)"
+        default=0,
+        help="Frame sampling interval in seconds (default: 0 for dynamic auto-calculation based on video length, e.g. 10s for 5 mins)"
+    )
+
+    parser.add_argument(
+        "--min-duration",
+        type=float,
+        default=10.0,
+        help="Minimum clip duration in seconds (default: 10.0)"
+    )
+
+    parser.add_argument(
+        "--max-duration",
+        type=float,
+        default=20.0,
+        help="Maximum clip duration in seconds (default: 20.0)"
+    )
+
+    parser.add_argument(
+        "--subtitle-mode",
+        choices=["animated", "standard"],
+        default="animated",
+        help="Subtitle style to merge into final clips: 'animated' (word-by-word highlighted) or 'standard' (static SRT). Default: animated"
     )
 
     args = parser.parse_args()
 
     pipeline = FullVideoPipeline(
         args.video,
-        frame_interval=args.interval
+        frame_interval=args.interval,
+        min_duration=args.min_duration,
+        max_duration=args.max_duration,
+        subtitle_mode=args.subtitle_mode
     )
 
     pipeline.run()

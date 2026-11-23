@@ -1,0 +1,414 @@
+2026-11-20 11:20:04,489 | INFO | Dynamic frame interval selected: 10s (video duration: 189.6s)
+2026-11-20 11:20:04,491 | INFO | ============================================================
+2026-11-20 11:20:04,491 | INFO | STARTING: Audio transcription
+2026-11-20 11:20:04,491 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\audio_processor.py D:\AI Journey\LocalVideoAI\input\animal.mp4
+2026-11-20 11:20:37,760 | INFO | 
+===== AUDIO EXTRACTION =====
+Audio extracted: D:\AI Journey\LocalVideoAI\output\audio\animal.wav
+
+===== SPEECH TRANSCRIPTION =====
+Loading Whisper Small INT8 model...
+Whisper model loaded.
+Starting transcription...
+[9.71s - 16.22s] This male arctic fox has spent the last six months alone.
+[20.24s - 25.00s] He really goes the distance when food is in short supply.
+[27.23s - 30.59s] One, even clocked more than a thousand miles
+[30.59s - 32.27s] in just over two months.
+[37.82s - 41.92s] This little guy has been surviving off his street smarts.
+[48.81s - 52.97s] You can't be too careful when you're only 12 inches tall.
+[52.97s - 64.12s] In the arctic, even leftovers are a reason to celebrate.
+[77.06s - 83.40s] With spring in the air, he's heading home to reunite with his lifelong mate.
+[93.72s - 97.92s] They've spent the long winter apart searching for food.
+[103.93s - 107.79s] He must find her if there's any hope of starting a family.
+[118.39s - 121.61s] Maybe she hasn't survived the winter.
+[121.61s - 144.96s] There she is, together again.
+[154.40s - 157.90s] Time to get on with the business of becoming a mom and dad.
+[158.84s - 162.70s] And to raise their litter of pups before the end of summer.
+
+===== TRANSCRIPT SAVING =====
+JSON: D:\AI Journey\LocalVideoAI\output\transcripts\animal.json
+TXT: D:\AI Journey\LocalVideoAI\output\transcripts\animal.txt
+
+Processing completed successfully.
+
+2026-11-20 11:20:37,767 | INFO | COMPLETED: Audio transcription (33.27 seconds)
+2026-11-20 11:20:37,767 | INFO | ============================================================
+2026-11-20 11:20:37,767 | INFO | STARTING: Frame sampling
+2026-11-20 11:20:37,768 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_sampler.py D:\AI Journey\LocalVideoAI\input\animal.mp4 --interval 10
+2026-11-20 11:20:38,977 | INFO | Using specified frame interval: 10s
+Extracting representative video frames every 10s...
+Successfully extracted 19 frames.
+frame_001.jpg -> 0.00 seconds
+frame_002.jpg -> 10.00 seconds
+frame_003.jpg -> 20.00 seconds
+frame_004.jpg -> 30.00 seconds
+frame_005.jpg -> 40.00 seconds
+frame_006.jpg -> 50.00 seconds
+frame_007.jpg -> 60.00 seconds
+frame_008.jpg -> 70.00 seconds
+frame_009.jpg -> 80.00 seconds
+frame_010.jpg -> 90.00 seconds
+frame_011.jpg -> 100.00 seconds
+frame_012.jpg -> 110.00 seconds
+frame_013.jpg -> 120.00 seconds
+frame_014.jpg -> 130.00 seconds
+frame_015.jpg -> 140.00 seconds
+frame_016.jpg -> 150.00 seconds
+frame_017.jpg -> 160.00 seconds
+frame_018.jpg -> 170.00 seconds
+frame_019.jpg -> 180.00 seconds
+
+Frame sampling completed.
+Total frames: 19
+
+2026-11-20 11:20:38,978 | INFO | COMPLETED: Frame sampling (1.21 seconds)
+2026-11-20 11:20:38,978 | INFO | ============================================================
+2026-11-20 11:20:38,979 | INFO | STARTING: Visual frame analysis
+2026-11-20 11:20:38,979 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_analyzer.py D:\AI Journey\LocalVideoAI\output\frames\animal --interval 10
+2026-11-20 11:32:39,518 | INFO | 
+Found 19 frames (sampling interval: 10s).
+Starting visual analysis...
+
+
+Processing frame 1/19 at 0.00s
+
+Analyzing image: frame_001.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 2/19 at 10.00s
+
+Analyzing image: frame_002.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 3/19 at 20.00s
+
+Analyzing image: frame_003.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 4/19 at 30.00s
+
+Analyzing image: frame_004.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 5/19 at 40.00s
+
+Analyzing image: frame_005.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 6/19 at 50.00s
+
+Analyzing image: frame_006.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 7/19 at 60.00s
+
+Analyzing image: frame_007.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 8/19 at 70.00s
+
+Analyzing image: frame_008.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 9/19 at 80.00s
+
+Analyzing image: frame_009.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 10/19 at 90.00s
+
+Analyzing image: frame_010.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 11/19 at 100.00s
+
+Analyzing image: frame_011.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 12/19 at 110.00s
+
+Analyzing image: frame_012.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 13/19 at 120.00s
+
+Analyzing image: frame_013.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 14/19 at 130.00s
+
+Analyzing image: frame_014.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 15/19 at 140.00s
+
+Analyzing image: frame_015.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 16/19 at 150.00s
+
+Analyzing image: frame_016.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 17/19 at 160.00s
+
+Analyzing image: frame_017.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 18/19 at 170.00s
+
+Analyzing image: frame_018.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 19/19 at 180.00s
+
+Analyzing image: frame_019.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Visual analysis completed.
+Report saved: D:\AI Journey\LocalVideoAI\output\visual_analysis\animal_visual_analysis.json
+
+Summary:
+Total frames: 19
+Successful: 19
+Failed: 0
+
+2026-11-20 11:32:39,520 | INFO | COMPLETED: Visual frame analysis (720.54 seconds)
+2026-11-20 11:32:39,521 | INFO | ============================================================
+2026-11-20 11:32:39,521 | INFO | STARTING: AI highlight detection
+2026-11-20 11:32:39,521 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\highlight_detector.py D:\AI Journey\LocalVideoAI\output\transcripts\animal.json --visual D:\AI Journey\LocalVideoAI\output\visual_analysis\animal_visual_analysis.json --min-duration 10.0 --max-duration 20.0
+2026-11-20 11:33:57,646 | INFO | 
+===== LOADING TRANSCRIPT =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== MULTIMODAL AI HIGHLIGHT DETECTION =====
+
+Preparing multimodal context...
+Visual frames: 19
+
+Sending context to Qwen3:4b...
+Target clip duration: 10s - 20s
+Analyzing speech for engaging standalone highlights...
+
+Skipping highlight 'The Reunion That Changes Everything': duration 23.35s exceeds maximum 20.0s.
+Skipping highlight 'Raising Pups Before Summer Ends': duration 8.3s below minimum 10.0s.
+
+===== DETECTED HIGHLIGHTS =====
+
+Highlight #1
+Title: The Arctic Fox's Six-Month Solitude
+Time: 9.71s - 25.0s (Duration: 15.29s)
+Category: educational
+Score: 9
+Reason: Starts with a strong hook about the fox's isolation, provides context on survival challenges, and ends with the immediate stakes of food scarcity - all within 10-20s. Perfect standalone for viewers curious about animal resilience.
+Transcript: This male arctic fox has spent the last six months alone. He really goes the distance when food is in short supply.
+
+Highlight #2
+Title: Surviving on Street Smarts in the Arctic
+Time: 27.23s - 41.92s (Duration: 14.69s)
+Category: educational
+Score: 8
+Reason: Highlights the fox's survival tactics with a relatable hook ('you can't be too careful') and ends with a surprising fact about leftovers - creates immediate intrigue about how tiny animals adapt to extreme environments.
+Transcript: One, even clocked more than a thousand miles in just over two months. This little guy has been surviving off his street smarts.
+
+===== SAVING RESULTS =====
+Saved: D:\AI Journey\LocalVideoAI\output\highlights\animal_highlights.json
+
+Highlight detection completed.
+
+2026-11-20 11:33:57,646 | INFO | COMPLETED: AI highlight detection (78.12 seconds)
+2026-11-20 11:33:57,647 | INFO | ============================================================
+2026-11-20 11:33:57,647 | INFO | STARTING: Visual enrichment
+2026-11-20 11:33:57,647 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_enricher.py D:\AI Journey\LocalVideoAI\output\highlights\animal_highlights.json D:\AI Journey\LocalVideoAI\output\visual_analysis\animal_visual_analysis.json
+2026-11-20 11:33:58,001 | INFO | 
+===== LOADING HIGHLIGHTS =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== ENRICHING HIGHLIGHTS =====
+
+===== ENRICHMENT SUMMARY =====
+
+Highlight #1
+Title: The Arctic Fox's Six-Month Solitude
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #2
+Title: Surviving on Street Smarts in the Arctic
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\animal_enriched.json
+
+2026-11-20 11:33:58,002 | INFO | COMPLETED: Visual enrichment (0.35 seconds)
+2026-11-20 11:33:58,002 | INFO | ============================================================
+2026-11-20 11:33:58,002 | INFO | STARTING: Semantic visual relevance
+2026-11-20 11:33:58,002 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_relevance.py D:\AI Journey\LocalVideoAI\output\enriched\animal_enriched.json
+2026-11-20 11:36:06,311 | INFO | 
+===== LOADING ENRICHED HIGHLIGHTS =====
+
+===== ANALYZING SEMANTIC VISUAL RELEVANCE =====
+
+Analyzing: The Arctic Fox's Six-Month Solitude
+  Frame 1/2: frame_002.jpg
+    Relevance: 8/10
+  Frame 2/2: frame_003.jpg
+    Relevance: 6/10
+
+Analyzing: Surviving on Street Smarts in the Arctic
+  Frame 1/2: frame_004.jpg
+    Relevance: 3/10
+  Frame 2/2: frame_005.jpg
+    Relevance: 1/10
+
+===== ANALYSIS COMPLETED =====
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\animal_semantic.json
+
+2026-11-20 11:36:06,311 | INFO | COMPLETED: Semantic visual relevance (128.31 seconds)
+2026-11-20 11:36:06,312 | INFO | ============================================================
+2026-11-20 11:36:06,312 | INFO | STARTING: Visual selection
+2026-11-20 11:36:06,312 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_selector.py D:\AI Journey\LocalVideoAI\output\enriched\animal_semantic.json
+2026-11-20 11:36:06,529 | INFO | 
+===== LOADING SEMANTIC VISUAL ANALYSIS =====
+
+===== SELECTING DIVERSE VISUAL FRAMES =====
+
+Highlight: The Arctic Fox's Six-Month Solitude
+  Evaluated: 2 | Selected: 1
+  frame_002.jpg | Time: 10s | Topic: 8/10 | Score: 7.7
+
+Highlight: Surviving on Street Smarts in the Arctic
+  Evaluated: 2 | Selected: 0
+
+===== SELECTION COMPLETED =====
+Total selected frames: 1
+Saved: D:\AI Journey\LocalVideoAI\output\selected_visuals\animal_selected_visuals.json
+
+2026-11-20 11:36:06,530 | INFO | COMPLETED: Visual selection (0.22 seconds)
+2026-11-20 11:36:06,530 | INFO | ============================================================
+2026-11-20 11:36:06,531 | INFO | STARTING: Final clip production
+2026-11-20 11:36:06,531 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\clip_pipeline.py D:\AI Journey\LocalVideoAI\input\animal.mp4 D:\AI Journey\LocalVideoAI\output\transcripts\animal.json D:\AI Journey\LocalVideoAI\output\selected_visuals\animal_selected_visuals.json --subtitle-mode animated
+2026-11-20 11:37:19,419 | INFO | 
+===================================
+ LOCAL AI VIDEO CLIPPING PIPELINE
+===================================
+
+SOURCE VIDEO: animal
+SUBTITLE MERGE MODE: ANIMATED
+
+===== STEP 1: CLIP EXTRACTION =====
+
+Generating clip #1
+Title: The Arctic Fox's Six-Month Solitude
+Time: 9.71s - 25.00s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\animal\01_The_Arctic_Fox's_Six-Month_Solitude.mp4
+Selected visuals: 1
+  frame_002.jpg | Time: 10s | Relevance: 8/10
+
+Generating clip #2
+Title: Surviving on Street Smarts in the Arctic
+Time: 27.23s - 41.92s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\animal\02_Surviving_on_Street_Smarts_in_the_Arctic.mp4
+Selected visuals: 0
+
+===== PROCESSING CLIP 1/2 =====
+
+STEP 2: B-ROLL COMPOSITION
+
+===== B-ROLL COMPOSITION =====
+Clip: 01_The_Arctic_Fox's_Six-Month_Solitude.mp4
+Selected visuals: 1
+B-roll 1: frame_002.jpg at 0.29s
+B-roll video saved: D:\AI Journey\LocalVideoAI\output\broll\animal\01_The_Arctic_Fox's_Six-Month_Solitude_broll.mp4
+B-roll video: D:\AI Journey\LocalVideoAI\output\broll\animal\01_The_Arctic_Fox's_Six-Month_Solitude_broll.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\animal\01_The_Arctic_Fox's_Six-Month_Solitude_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 459 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 2/2 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\animal\02_Surviving_on_Street_Smarts_in_the_Arctic.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\animal\02_Surviving_on_Street_Smarts_in_the_Arctic_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 441 overlay frames.
+
+Combining captions with video...
+
+===== SAVING PIPELINE RESULTS =====
+
+===== PIPELINE RESULTS SAVED =====
+D:\AI Journey\LocalVideoAI\output\pipeline_results\animal_pipeline_results.json
+
+===== PIPELINE COMPLETED =====
+Source video: animal
+Total final videos: 2
+
+===== FINAL PRODUCTION SUMMARY =====
+Total final videos: 2
+
+Title: The Arctic Fox's Six-Month Solitude
+Final video: D:\AI Journey\LocalVideoAI\output\final\animal\01_The_Arctic_Fox's_Six-Month_Solitude_final.mp4
+Duration: 15.306958
+Category: educational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\broll\animal\01_The_Arctic_Fox's_Six-Month_Solitude_broll.mp4
+
+Title: Surviving on Street Smarts in the Arctic
+Final video: D:\AI Journey\LocalVideoAI\output\final\animal\02_Surviving_on_Street_Smarts_in_the_Arctic_final.mp4
+Duration: 14.723042
+Category: educational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\animal\02_Surviving_on_Street_Smarts_in_the_Arctic.mp4
+
+Pipeline completed.
+
+2026-11-20 11:37:19,421 | INFO | COMPLETED: Final clip production (72.89 seconds)
+2026-11-20 11:37:19,422 | INFO | Processing report: D:\AI Journey\LocalVideoAI\output\pipeline_results\animal_full_pipeline_report.json
+2026-11-20 11:37:19,423 | INFO | ============================================================
+2026-11-20 11:37:19,423 | INFO | FULL PIPELINE COMPLETED SUCCESSFULLY
+2026-11-20 11:37:19,423 | INFO | Total processing time: 1035.96 seconds

@@ -1,0 +1,862 @@
+2026-11-20 11:43:22,202 | INFO | Dynamic frame interval selected: 10s (video duration: 342.7s)
+2026-11-20 11:43:22,203 | INFO | ============================================================
+2026-11-20 11:43:22,204 | INFO | STARTING: Audio transcription
+2026-11-20 11:43:22,204 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\audio_processor.py D:\AI Journey\LocalVideoAI\input\claude.mp4
+2026-11-20 11:43:34,155 | INFO | 
+===== AUDIO EXTRACTION =====
+Audio extracted: D:\AI Journey\LocalVideoAI\output\audio\claude.wav
+
+===== SPEECH TRANSCRIPTION =====
+Loading Whisper Small INT8 model...
+Whisper model loaded.
+Starting transcription...
+
+2026-11-20 11:43:34,155 | ERROR | Traceback (most recent call last):
+  File "D:\AI Journey\LocalVideoAI\app\core\audio_processor.py", line 170, in <module>
+    transcript = processor.transcribe(audio)
+  File "D:\AI Journey\LocalVideoAI\app\core\audio_processor.py", line 110, in transcribe
+    print(
+    ~~~~~^
+        f"[{segment.start:.2f}s - {segment.end:.2f}s] "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        f"{segment.text.strip()}"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 16-82: character maps to <undefined>
+
+2026-11-20 11:43:34,156 | ERROR | PIPELINE FAILED: Audio transcription failed with exit code 1
+Traceback (most recent call last):
+  File "D:\AI Journey\LocalVideoAI\app\core\full_pipeline.py", line 290, in run
+    self.run_command(
+    ~~~~~~~~~~~~~~~~^
+        "Audio transcription",
+        ^^^^^^^^^^^^^^^^^^^^^^
+        "audio_processor.py",
+        ^^^^^^^^^^^^^^^^^^^^^
+        [self.video_path]
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\AI Journey\LocalVideoAI\app\core\full_pipeline.py", line 176, in run_command
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: Audio transcription failed with exit code 1
+2026-11-20 11:43:34,167 | INFO | Processing report: D:\AI Journey\LocalVideoAI\output\pipeline_results\claude_full_pipeline_report.json
+2026-11-20 11:52:24,994 | INFO | Dynamic frame interval selected: 10s (video duration: 342.7s)
+2026-11-20 11:52:24,994 | INFO | ============================================================
+2026-11-20 11:52:24,994 | INFO | STARTING: Audio transcription
+2026-11-20 11:52:24,995 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\audio_processor.py D:\AI Journey\LocalVideoAI\input\claude.mp4
+2026-11-20 11:53:49,443 | INFO | 
+===== AUDIO EXTRACTION =====
+Audio extracted: D:\AI Journey\LocalVideoAI\output\audio\claude.wav
+
+===== SPEECH TRANSCRIPTION =====
+Loading Whisper Small INT8 model...
+Whisper model loaded.
+Starting transcription...
+[0.00s - 6.12s] この動画を最後まで見れば、自分の音声クリップを、人々が思わず見たくなるようなハイクオリティなドキュメンタリーに変える方法がわかります。
+[6.30s - 11.14s] SNSで人々の注目を集め、再生数を稼ぎたいのなら、この編集技術を身につけるべきです。
+[11.30s - 15.76s] 今は2026年ですから身につける、といっても、実のところ私のプロンクトを盗むだけで十分です。
+[16.22s - 19.50s] 1950年、アランチューリングが一つの問いを投げかけました。
+[19.68s - 21.00s] 機械は施行できるか?
+[21.24s - 24.76s] 1956年、ダートマス会議でその名が付けられました。
+[25.00s - 26.80s] 人工知能 AI です。
+[26.80s - 31.38s] 1958年、ブランク・ローゼンブラッドが学習する機械を構築しました。
+[31.58s - 37.06s] ニューヨークタイム寿司は、いつかこの機械が歩き、話し、自身の存在を意識するようになると報じました。
+[37.20s - 39.10s] しかし、それは失敗に終わります。
+[39.36s - 45.12s] AI は数十年に渡り冬の時代を迎えますが、ジェフリー・ヒントンが小数の反逆者たちは諦めませんでした。
+[45.36s - 46.42s] プログラムするな。
+[46.56s - 47.60s] 訓練制御。
+[47.78s - 52.58s] 何十億もの事例と何長もの微調整を繰り返しパターンが予測へと変わり、
+[53.02s - 55.38s] その予測が施行のように見え始めるまで。
+[55.38s - 59.02s] さて、皆さんはどう感じたかわかりませんが、私にはかなりよく見えました。
+[59.20s - 64.84s] 特に、すべてが一連の滑らかな動きだったことを考えると、YouTubeチャンネルを成長させたいなら、これはまさに無限のパワーです。
+[65.02s - 68.76s] 人々が耳を傾けたくなるような台本を考えるだけの知性さえあればいいのです。
+[68.92s - 71.38s] まあ、実はそれもAIがやってくれますけどね。
+[74.01s - 82.03s] もし皆さんがチャットGPTやクロードでこれと同じことをしようとして自分の作ったものはあんな風にならなかったと思っているなら、それはプロンクトとリファレンス次第だということです。
+[82.17s - 85.15s] ただ、私はリファレンスの方が大きな役割を果たしていると断言します。
+[85.15s - 89.21s] 動画の裏側でお見せしていないことの一つに、私がリファレンス探しに膨大な時間を費やしているという事実があります。
+[89.39s - 91.05s] 私には想像性なんて未人もありません。
+[91.19s - 93.15s] 直接だったら、きっと頭が空っぽだと思われるでしょう。
+[93.35s - 95.43s] でも幸いなことに、私は、結むのが得意です。
+[95.61s - 97.15s] さあ、何かを結みに行きましょう。
+[97.37s - 98.71s] まずはピンタレストを開きます。
+[98.99s - 107.37s] タブ1つ目に、3Dドキュメンタリー、2つ目にシネマティックな新聞アニメーション、3つ目に、ドキュメンタリーフーマップアニメーションと検索をかけます。
+[107.37s - 112.09s] こうしてタブを切り替えながら、気になる画像をどんどんフォルダに保存していきます。
+[112.41s - 118.09s] 新しくクリックするたびに似た画像が表示されるので、それを繰り返すことで目指すスタイルを構築できます。
+[118.37s - 121.97s] 大抵の人はに、3分もすればドーパミン型になってやめてしまいます。
+[122.19s - 124.59s] リファレンスが素晴らしすぎて満足してしまうからです。
+[124.75s - 128.15s] しかし私は、20分、30分、時には1時間でも続けます。
+[128.33s - 133.13s] そうすることで、自分の編集をどの方向に進めたいのかが明確になり、心から納得できるのです。
+[133.13s - 136.31s] クロードのサブスクリプションをお持ちなら、それを使えば大丈夫です。
+[136.47s - 139.55s] 私は、本動画のスポンサーであるアバカスアイアジェントを使います。
+[139.79s - 143.69s] 月額わずか10ドルで、私がこれまで使ってきたあらゆるモデルにアクセスできます。
+[144.03s - 145.93s] 概要欄にリンクを貼っておきました。
+[146.15s - 147.73s] ここからモデルを選択します。
+[148.11s - 150.67s] クロードオーパス5.5を選びます。
+[150.81s - 156.81s] プロンプとの腕を上げるにつれて、30秒から40秒の、実質的に途切れない映像クリップを作れるようになりました。
+[157.03s - 160.61s] 以前は複数のクリップを生成してタイムラインに並べる必要がありましたが、
+[160.61s - 165.75s] それも有効とは言え、今回は全く異なるスタイルで、これほど高性能だとは知りませんでした。
+[165.91s - 169.21s] このプロンプとは概要欄にあるので、コピー&ペースとしてください。
+[169.45s - 174.81s] 冒頭で流したデモ用に最適化されており、あそこまでスムーズに流れるようにするには何度も試行錯誤が必要でした。
+[175.01s - 178.73s] もしスタイルを完全に切り替えたい場合のために、どのようにプロンプとしたかをお見せします。
+[178.99s - 182.83s] まず貸したルールは、すべてコードで構築することで、AI動画生成ツールは使いません。
+[183.05s - 184.93s] 最初のバージョンはあまりよくありませんでした。
+[184.93s - 187.11s] パワーポイントのプレゼンのような見た目でした。
+[187.33s - 191.01s] 2つ目も今1つだったので、実際の素材を渡して作業させることにしました。
+[191.25s - 195.27s] 必要なものをすべてリストアップするように頼み、そのアセットを渡したのです。
+[195.49s - 198.49s] それには歴史的な人物の実際の写真などが含まれていました。
+[198.71s - 201.39s] 今回の出来はかなりよくなりましたが、まだ完璧ではありません。
+[201.63s - 203.87s] そこで、何が問題なのかをすべて指摘しました。
+[204.15s - 206.85s] 動きが早すぎて、文字が読めないと伝えました。
+[207.11s - 211.57s] 人工知能といった特定のフレーズが、必要のない場所で何度も表示されていました。
+[211.57s - 217.73s] そこで、動きを遅くし、デザインに時間をかけ、カメラの動きを滑らかにし、読みやすさを向上させるよう指示しました。
+[217.89s - 220.29s] 不明な点があれば質問するようにとも伝えました。
+[220.49s - 223.77s] お分かりいただけると思いますが、秘訣は魔法のようなプロンプトが1つあるわけではありません。
+[223.93s - 227.89s] 結局のところ、AIとの向き合い方を知り、悪い結果が出てもめげないことが重要なんです。
+[228.17s - 233.73s] もちろん、このように完璧に仕上がれば、スタイルを大きく変えない限り、その早いペースを維持するのは簡単です。
+[233.97s - 235.87s] 最後のステップはサウンドデザインです。
+[235.87s - 239.45s] これには、タイムラインとチャットGPT-6アストラを使用しました。
+[239.61s - 246.35s] アバカスアイアジェントには、オーパス5-5とGPT-6アストラを組み合わせた、X-Highモードという機能があります。
+[246.63s - 251.65s] これは両者を連携させるもので、私の編集ワークフローで使う2つのモデルに最適なんです。
+[251.99s - 255.45s] ここでは、どのモデルに何をさせるかを明確に指示する必要があります。
+[255.75s - 263.09s] 前回の動画で説明した通り、モーショングラフィックスにはクロードを、映像のカット編集やサウンドデザインにはチャットGPT-6アストラを使うのがベストです。
+[263.09s - 269.93s] 今回は、あらかじめホルダとサウンド素材への直接アクセス剣を与えておき、後から自分でいくつかの効果音を微調整しました。
+[270.15s - 273.99s] もう1つ、手早く紹介したいのが、ホームページにある複数のタブです。
+[274.15s - 279.79s] 音声を選択してオーディオ生成を選べば、台本を入力するだけで動画のナレーションを作成してくれます。
+[279.97s - 284.51s] もちろん、これをエージェントに戻せば、その上にモーションデザインを全て重ねてくれます。
+[284.69s - 287.97s] この動画で使った効果音が欲しい方は下にコメントしてください。
+[287.97s - 291.77s] 十分な、いいね、が集まれば概要欄にリンクを貼るかもしれません。
+[291.89s - 295.07s] それはさておき、同じ音声クリップを使った別のバージョンがこちらです。
+[295.53s - 298.75s] 1950年、アランチューリングは1つの問いを投げかけました。
+[298.93s - 300.29s] 機械は施行できるか?
+[300.57s - 305.81s] 1956年、ダートマス会議で人工知能という名が与えられました。
+[306.07s - 310.47s] 1958年、フランクローゼンブラッドが学習する機械を構築します。
+[310.79s - 316.43s] ニューヨークタイム寿司は、いつか機械があると話し、自身の存在を自覚するようになると報じました。
+[316.43s - 318.41s] しかし、失敗に終わります。
+[318.53s - 324.21s] ジェフリー・ヒントンと小数の反逆者たちが諦めなかったことで、AIは長い沈黙から目覚めます。
+[324.39s - 327.09s] プログラムするのではなく、訓練するのです。
+[327.31s - 334.87s] 何十億もの事例と何長もの微調整を重ねパターンが予測へと変わり、その予測が思考のように見え始めるまで。
+
+===== TRANSCRIPT SAVING =====
+JSON: D:\AI Journey\LocalVideoAI\output\transcripts\claude.json
+TXT: D:\AI Journey\LocalVideoAI\output\transcripts\claude.txt
+
+Processing completed successfully.
+
+2026-11-20 11:53:49,443 | INFO | COMPLETED: Audio transcription (84.45 seconds)
+2026-11-20 11:53:49,444 | INFO | ============================================================
+2026-11-20 11:53:49,444 | INFO | STARTING: Frame sampling
+2026-11-20 11:53:49,444 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_sampler.py D:\AI Journey\LocalVideoAI\input\claude.mp4 --interval 10
+2026-11-20 11:53:50,575 | INFO | Using specified frame interval: 10s
+Extracting representative video frames every 10s...
+Successfully extracted 34 frames.
+frame_001.jpg -> 0.00 seconds
+frame_002.jpg -> 10.00 seconds
+frame_003.jpg -> 20.00 seconds
+frame_004.jpg -> 30.00 seconds
+frame_005.jpg -> 40.00 seconds
+frame_006.jpg -> 50.00 seconds
+frame_007.jpg -> 60.00 seconds
+frame_008.jpg -> 70.00 seconds
+frame_009.jpg -> 80.00 seconds
+frame_010.jpg -> 90.00 seconds
+frame_011.jpg -> 100.00 seconds
+frame_012.jpg -> 110.00 seconds
+frame_013.jpg -> 120.00 seconds
+frame_014.jpg -> 130.00 seconds
+frame_015.jpg -> 140.00 seconds
+frame_016.jpg -> 150.00 seconds
+frame_017.jpg -> 160.00 seconds
+frame_018.jpg -> 170.00 seconds
+frame_019.jpg -> 180.00 seconds
+frame_020.jpg -> 190.00 seconds
+frame_021.jpg -> 200.00 seconds
+frame_022.jpg -> 210.00 seconds
+frame_023.jpg -> 220.00 seconds
+frame_024.jpg -> 230.00 seconds
+frame_025.jpg -> 240.00 seconds
+frame_026.jpg -> 250.00 seconds
+frame_027.jpg -> 260.00 seconds
+frame_028.jpg -> 270.00 seconds
+frame_029.jpg -> 280.00 seconds
+frame_030.jpg -> 290.00 seconds
+frame_031.jpg -> 300.00 seconds
+frame_032.jpg -> 310.00 seconds
+frame_033.jpg -> 320.00 seconds
+frame_034.jpg -> 330.00 seconds
+
+Frame sampling completed.
+Total frames: 34
+
+2026-11-20 11:53:50,575 | INFO | COMPLETED: Frame sampling (1.13 seconds)
+2026-11-20 11:53:50,576 | INFO | ============================================================
+2026-11-20 11:53:50,576 | INFO | STARTING: Visual frame analysis
+2026-11-20 11:53:50,576 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_analyzer.py D:\AI Journey\LocalVideoAI\output\frames\claude --interval 10
+2026-11-20 12:11:00,479 | INFO | 
+Found 34 frames (sampling interval: 10s).
+Starting visual analysis...
+
+
+Processing frame 1/34 at 0.00s
+
+Analyzing image: frame_001.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 2/34 at 10.00s
+
+Analyzing image: frame_002.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 3/34 at 20.00s
+
+Analyzing image: frame_003.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 4/34 at 30.00s
+
+Analyzing image: frame_004.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 5/34 at 40.00s
+
+Analyzing image: frame_005.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 6/34 at 50.00s
+
+Analyzing image: frame_006.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 7/34 at 60.00s
+
+Analyzing image: frame_007.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 8/34 at 70.00s
+
+Analyzing image: frame_008.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 9/34 at 80.00s
+
+Analyzing image: frame_009.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 10/34 at 90.00s
+
+Analyzing image: frame_010.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 11/34 at 100.00s
+
+Analyzing image: frame_011.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 12/34 at 110.00s
+
+Analyzing image: frame_012.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 13/34 at 120.00s
+
+Analyzing image: frame_013.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 14/34 at 130.00s
+
+Analyzing image: frame_014.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 15/34 at 140.00s
+
+Analyzing image: frame_015.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 16/34 at 150.00s
+
+Analyzing image: frame_016.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 17/34 at 160.00s
+
+Analyzing image: frame_017.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 18/34 at 170.00s
+
+Analyzing image: frame_018.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 19/34 at 180.00s
+
+Analyzing image: frame_019.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 20/34 at 190.00s
+
+Analyzing image: frame_020.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 21/34 at 200.00s
+
+Analyzing image: frame_021.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 22/34 at 210.00s
+
+Analyzing image: frame_022.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 23/34 at 220.00s
+
+Analyzing image: frame_023.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 24/34 at 230.00s
+
+Analyzing image: frame_024.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 25/34 at 240.00s
+
+Analyzing image: frame_025.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 26/34 at 250.00s
+
+Analyzing image: frame_026.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 27/34 at 260.00s
+
+Analyzing image: frame_027.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 28/34 at 270.00s
+
+Analyzing image: frame_028.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 29/34 at 280.00s
+
+Analyzing image: frame_029.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 30/34 at 290.00s
+
+Analyzing image: frame_030.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 31/34 at 300.00s
+
+Analyzing image: frame_031.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 32/34 at 310.00s
+
+Analyzing image: frame_032.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 33/34 at 320.00s
+
+Analyzing image: frame_033.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Processing frame 34/34 at 330.00s
+
+Analyzing image: frame_034.jpg
+Using model: qwen3-vl:4b
+Analysis completed.
+
+Visual analysis completed.
+Report saved: D:\AI Journey\LocalVideoAI\output\visual_analysis\claude_visual_analysis.json
+
+Summary:
+Total frames: 34
+Successful: 34
+Failed: 0
+
+2026-11-20 12:11:00,480 | INFO | COMPLETED: Visual frame analysis (1029.90 seconds)
+2026-11-20 12:11:00,480 | INFO | ============================================================
+2026-11-20 12:11:00,480 | INFO | STARTING: AI highlight detection
+2026-11-20 12:11:00,480 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\highlight_detector.py D:\AI Journey\LocalVideoAI\output\transcripts\claude.json --visual D:\AI Journey\LocalVideoAI\output\visual_analysis\claude_visual_analysis.json --min-duration 10.0 --max-duration 20.0
+2026-11-20 12:14:59,796 | INFO | 
+===== LOADING TRANSCRIPT =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== MULTIMODAL AI HIGHLIGHT DETECTION =====
+
+Preparing multimodal context...
+Visual frames: 34
+
+Sending context to Qwen3:4b...
+Target clip duration: 10s - 20s
+Analyzing speech for engaging standalone highlights...
+
+
+Rejected misleading highlight: Why AI References Take Longer Than You Think: The Real Secret
+Reason: The title claims AI references take longer than expected with a 'real secret', but the spoken content discusses using a $10/month subscription for AI tools (specifically 'Abacus AI Agent') to streamline editing, not the time spent on references. The reason mentions '20-30 minutes vs 3 minutes' and 'iterative process', which aren't addressed in the Japanese text. The content focuses on subscription benefits, not reference time comparisons.
+
+===== DETECTED HIGHLIGHTS =====
+
+Highlight #1
+Title: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+Time: 16.22s - 31.38s (Duration: 15.16s)
+Category: educational
+Score: 9
+Reason: This 15-second segment provides a clear historical timeline of AI's origins with specific milestones (1950, 1956, 1958) that viewers can understand without context. It starts with a strong historical hook and ends with a concrete example (the 1958 machine) that creates immediate relevance for tech-savvy audiences.
+Transcript: 1950年、アランチューリングが一つの問いを投げかけました。 機械は施行できるか? 1956年、ダートマス会議でその名が付けられました。 人工知能 AI です。 1958年、ブランク・ローゼンブラッドが学習する機械を構築しました。
+
+Highlight #2
+Title: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+Time: 59.2s - 71.38s (Duration: 12.18s)
+Category: motivational
+Score: 9
+Reason: This 15-second segment connects AI's capabilities to video editing by highlighting how a simple script can transform into a high-quality documentary. It starts with a relatable problem (creating engaging content) and ends with a clear, actionable insight about AI's role in content creation.
+Transcript: 特に、すべてが一連の滑らかな動きだったことを考えると、YouTubeチャンネルを成長させたいなら、これはまさに無限のパワーです。 人々が耳を傾けたくなるような台本を考えるだけの知性さえあればいいのです。 まあ、実はそれもAIがやってくれますけどね。
+
+Highlight #3
+Title: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+Time: 169.45s - 187.11s (Duration: 17.66s)
+Category: educational
+Score: 9
+Reason: This 18-second segment explains the iterative process of refining AI videos with specific examples (fixing motion speed, reducing AI phrases) and ends with a clear, actionable insight about the importance of patience and iteration. It starts with a surprising contrast to 'magic' and delivers practical knowledge.
+Transcript: 冒頭で流したデモ用に最適化されており、あそこまでスムーズに流れるようにするには何度も試行錯誤が必要でした。 もしスタイルを完全に切り替えたい場合のために、どのようにプロンプとしたかをお見せします。 まず貸したルールは、すべてコードで構築することで、AI動画生成ツールは使いません。 最初のバージョンはあまりよくありませんでした。 パワーポイントのプレゼンのような見た目でした。
+
+Highlight #4
+Title: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+Time: 37.2s - 55.38s (Duration: 18.18s)
+Category: educational
+Score: 8
+Reason: This 18-second segment explains the slow, iterative nature of AI development with specific examples (training, adjustments) and ends with the creator's personal insight about why this process works. It starts with a surprising contrast to expectations and delivers actionable knowledge about AI's evolution.
+Transcript: しかし、それは失敗に終わります。 AI は数十年に渡り冬の時代を迎えますが、ジェフリー・ヒントンが小数の反逆者たちは諦めませんでした。 プログラムするな。 訓練制御。 何十億もの事例と何長もの微調整を繰り返しパターンが予測へと変わり、 その予測が施行のように見え始めるまで。
+
+Highlight #5
+Title: How to Find the Perfect AI Style References in 20 Minutes
+Time: 107.37s - 124.59s (Duration: 17.22s)
+Category: educational
+Score: 8
+Reason: This 17-second segment explains the creator's method for finding AI style references with specific tools (Pinterest) and time investment (20-30 minutes). It starts with a practical problem (finding references) and ends with a clear, actionable solution that viewers can replicate immediately.
+Transcript: こうしてタブを切り替えながら、気になる画像をどんどんフォルダに保存していきます。 新しくクリックするたびに似た画像が表示されるので、それを繰り返すことで目指すスタイルを構築できます。 大抵の人はに、3分もすればドーパミン型になってやめてしまいます。 リファレンスが素晴らしすぎて満足してしまうからです。
+
+Highlight #6
+Title: How to Generate 30-Second AI Videos with One Prompt
+Time: 148.11s - 165.75s (Duration: 17.64s)
+Category: educational
+Score: 8
+Reason: This 17-second segment demonstrates the creator's method for generating high-quality AI videos using a single prompt, highlighting the speed and quality of the output. It starts with a specific technical detail (30-40 seconds) and ends with a clear, actionable takeaway about AI video generation.
+Transcript: クロードオーパス5.5を選びます。 プロンプとの腕を上げるにつれて、30秒から40秒の、実質的に途切れない映像クリップを作れるようになりました。 以前は複数のクリップを生成してタイムラインに並べる必要がありましたが、 それも有効とは言え、今回は全く異なるスタイルで、これほど高性能だとは知りませんでした。
+
+===== SAVING RESULTS =====
+Saved: D:\AI Journey\LocalVideoAI\output\highlights\claude_highlights.json
+
+Highlight detection completed.
+
+2026-11-20 12:14:59,797 | INFO | COMPLETED: AI highlight detection (239.32 seconds)
+2026-11-20 12:14:59,797 | INFO | ============================================================
+2026-11-20 12:14:59,797 | INFO | STARTING: Visual enrichment
+2026-11-20 12:14:59,797 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_enricher.py D:\AI Journey\LocalVideoAI\output\highlights\claude_highlights.json D:\AI Journey\LocalVideoAI\output\visual_analysis\claude_visual_analysis.json
+2026-11-20 12:14:59,961 | INFO | 
+===== LOADING HIGHLIGHTS =====
+
+===== LOADING VISUAL ANALYSIS =====
+
+===== ENRICHING HIGHLIGHTS =====
+
+===== ENRICHMENT SUMMARY =====
+
+Highlight #1
+Title: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+Frames matched: 2
+Average visual interest: 7.5/10
+
+Highlight #2
+Title: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+Frames matched: 2
+Average visual interest: 6.5/10
+
+Highlight #3
+Title: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #4
+Title: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+Frames matched: 2
+Average visual interest: 7.5/10
+
+Highlight #5
+Title: How to Find the Perfect AI Style References in 20 Minutes
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Highlight #6
+Title: How to Generate 30-Second AI Videos with One Prompt
+Frames matched: 2
+Average visual interest: 7.0/10
+
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\claude_enriched.json
+
+2026-11-20 12:14:59,961 | INFO | COMPLETED: Visual enrichment (0.16 seconds)
+2026-11-20 12:14:59,962 | INFO | ============================================================
+2026-11-20 12:14:59,962 | INFO | STARTING: Semantic visual relevance
+2026-11-20 12:14:59,962 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_relevance.py D:\AI Journey\LocalVideoAI\output\enriched\claude_enriched.json
+2026-11-20 12:20:08,476 | INFO | 
+===== LOADING ENRICHED HIGHLIGHTS =====
+
+===== ANALYZING SEMANTIC VISUAL RELEVANCE =====
+
+Analyzing: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+  Frame 1/2: frame_003.jpg
+    Relevance: 8/10
+  Frame 2/2: frame_004.jpg
+    Relevance: 1/10
+
+Analyzing: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+  Frame 1/2: frame_007.jpg
+    Relevance: 1/10
+  Frame 2/2: frame_008.jpg
+    Relevance: 1/10
+
+Analyzing: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+  Frame 1/2: frame_018.jpg
+    Relevance: 6/10
+  Frame 2/2: frame_019.jpg
+    Relevance: 1/10
+
+Analyzing: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+  Frame 1/2: frame_005.jpg
+    Relevance: 1/10
+  Frame 2/2: frame_006.jpg
+    Relevance: 0/10
+
+Analyzing: How to Find the Perfect AI Style References in 20 Minutes
+  Frame 1/2: frame_012.jpg
+    Relevance: 2/10
+  Frame 2/2: frame_013.jpg
+    Relevance: 2/10
+
+Analyzing: How to Generate 30-Second AI Videos with One Prompt
+  Frame 1/2: frame_016.jpg
+    Relevance: 1/10
+  Frame 2/2: frame_017.jpg
+    Relevance: 6/10
+
+===== ANALYSIS COMPLETED =====
+Saved: D:\AI Journey\LocalVideoAI\output\enriched\claude_semantic.json
+
+2026-11-20 12:20:08,476 | INFO | COMPLETED: Semantic visual relevance (308.51 seconds)
+2026-11-20 12:20:08,477 | INFO | ============================================================
+2026-11-20 12:20:08,477 | INFO | STARTING: Visual selection
+2026-11-20 12:20:08,477 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\visual_selector.py D:\AI Journey\LocalVideoAI\output\enriched\claude_semantic.json
+2026-11-20 12:20:08,644 | INFO | 
+===== LOADING SEMANTIC VISUAL ANALYSIS =====
+
+===== SELECTING DIVERSE VISUAL FRAMES =====
+
+Highlight: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+  Evaluated: 2 | Selected: 1
+  frame_003.jpg | Time: 20s | Topic: 8/10 | Score: 7.95
+
+Highlight: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+  Evaluated: 2 | Selected: 0
+
+Highlight: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+  Evaluated: 2 | Selected: 0
+
+Highlight: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+  Evaluated: 2 | Selected: 0
+
+Highlight: How to Find the Perfect AI Style References in 20 Minutes
+  Evaluated: 2 | Selected: 0
+
+Highlight: How to Generate 30-Second AI Videos with One Prompt
+  Evaluated: 2 | Selected: 0
+
+===== SELECTION COMPLETED =====
+Total selected frames: 1
+Saved: D:\AI Journey\LocalVideoAI\output\selected_visuals\claude_selected_visuals.json
+
+2026-11-20 12:20:08,644 | INFO | COMPLETED: Visual selection (0.17 seconds)
+2026-11-20 12:20:08,644 | INFO | ============================================================
+2026-11-20 12:20:08,644 | INFO | STARTING: Final clip production
+2026-11-20 12:20:08,644 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\clip_pipeline.py D:\AI Journey\LocalVideoAI\input\claude.mp4 D:\AI Journey\LocalVideoAI\output\transcripts\claude.json D:\AI Journey\LocalVideoAI\output\selected_visuals\claude_selected_visuals.json --subtitle-mode animated
+2026-11-20 12:23:46,475 | INFO | 
+===================================
+ LOCAL AI VIDEO CLIPPING PIPELINE
+===================================
+
+SOURCE VIDEO: claude
+SUBTITLE MERGE MODE: ANIMATED
+
+===== STEP 1: CLIP EXTRACTION =====
+
+Generating clip #1
+Title: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+Time: 16.22s - 31.38s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Technology.mp4
+Selected visuals: 1
+  frame_003.jpg | Time: 20s | Relevance: 8/10
+
+Generating clip #2
+Title: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+Time: 59.20s - 71.38s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\02_The_Power_of_AI_in_Video_Editing_Why_Your_Script_Can_Be_a_Documentary.mp4
+Selected visuals: 0
+
+Generating clip #3
+Title: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+Time: 169.45s - 187.11s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\03_The_Real_Secret_to_Perfect_AI_Videos_It's_Not_Magic,_It's_Process.mp4
+Selected visuals: 0
+
+Generating clip #4
+Title: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+Time: 37.20s - 55.38s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\04_Why_AI_Takes_Years_to_Improve_The_Real_Secret_Behind_AI's_Progress.mp4
+Selected visuals: 0
+
+Generating clip #5
+Title: How to Find the Perfect AI Style References in 20 Minutes
+Time: 107.37s - 124.59s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\05_How_to_Find_the_Perfect_AI_Style_References_in_20_Minutes.mp4
+Selected visuals: 0
+
+Generating clip #6
+Title: How to Generate 30-Second AI Videos with One Prompt
+Time: 148.11s - 165.75s
+Generated: D:\AI Journey\LocalVideoAI\output\clips\claude\06_How_to_Generate_30-Second_AI_Videos_with_One_Prompt.mp4
+Selected visuals: 0
+
+===== PROCESSING CLIP 1/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+
+===== B-ROLL COMPOSITION =====
+Clip: 01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Technology.mp4
+Selected visuals: 1
+B-roll 1: frame_003.jpg at 3.78s
+B-roll video saved: D:\AI Journey\LocalVideoAI\output\broll\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Technology_broll.mp4
+B-roll video: D:\AI Journey\LocalVideoAI\output\broll\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Technology_broll.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Tech_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 455 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 2/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\claude\02_The_Power_of_AI_in_Video_Editing_Why_Your_Script_Can_Be_a_Documentary.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\02_The_Power_of_AI_in_Video_Editing_Why_Your_Script_Can_Be_a_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 366 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 3/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\claude\03_The_Real_Secret_to_Perfect_AI_Videos_It's_Not_Magic,_It's_Process.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\03_The_Real_Secret_to_Perfect_AI_Videos_It's_Not_Magic,_It's_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 530 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 4/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\claude\04_Why_AI_Takes_Years_to_Improve_The_Real_Secret_Behind_AI's_Progress.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\04_Why_AI_Takes_Years_to_Improve_The_Real_Secret_Behind_AI's_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 546 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 5/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\claude\05_How_to_Find_the_Perfect_AI_Style_References_in_20_Minutes.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\05_How_to_Find_the_Perfect_AI_Style_References_in_20_Minutes_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 517 overlay frames.
+
+Combining captions with video...
+
+===== PROCESSING CLIP 6/6 =====
+
+STEP 2: B-ROLL COMPOSITION
+No valid B-roll frames. Returning original clip.
+B-roll video: D:\AI Journey\LocalVideoAI\output\clips\claude\06_How_to_Generate_30-Second_AI_Videos_with_One_Prompt.mp4
+
+STEP 3: VERTICAL FORMATTING
+Formatting video using 'blur' mode...
+Formatted video: D:\AI Journey\LocalVideoAI\output\formatted\claude\06_How_to_Generate_30-Second_AI_Videos_with_One_Prompt_vertical.mp4
+
+STEP 4: STANDARD SUBTITLE GENERATION
+
+STEP 5: ANIMATED CAPTION GENERATION
+
+STEP 6: MERGING ANIMATED SUBTITLES
+
+Generating caption animation frames...
+Generated 530 overlay frames.
+
+Combining captions with video...
+
+===== SAVING PIPELINE RESULTS =====
+
+===== PIPELINE RESULTS SAVED =====
+D:\AI Journey\LocalVideoAI\output\pipeline_results\claude_pipeline_results.json
+
+===== PIPELINE COMPLETED =====
+Source video: claude
+Total final videos: 6
+
+===== FINAL PRODUCTION SUMMARY =====
+Total final videos: 6
+
+Title: How AI Evolved from 1950 to 1958: The Birth of Modern Technology
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Tech_final.mp4
+Duration: 15.181834
+Category: educational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\broll\claude\01_How_AI_Evolved_from_1950_to_1958_The_Birth_of_Modern_Technology_broll.mp4
+
+Title: The Power of AI in Video Editing: Why Your Script Can Be a Documentary
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\02_The_Power_of_AI_in_Video_Editing_Why_Your_Script_Can_Be_a_final.mp4
+Duration: 12.2122
+Category: motivational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\claude\02_The_Power_of_AI_in_Video_Editing_Why_Your_Script_Can_Be_a_Documentary.mp4
+
+Title: The Real Secret to Perfect AI Videos: It's Not Magic, It's Process
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\03_The_Real_Secret_to_Perfect_AI_Videos_It's_Not_Magic,_It's_final.mp4
+Duration: 17.684334
+Category: educational
+Score: 9
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\claude\03_The_Real_Secret_to_Perfect_AI_Videos_It's_Not_Magic,_It's_Process.mp4
+
+Title: Why AI Takes Years to Improve: The Real Secret Behind AI's Progress
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\04_Why_AI_Takes_Years_to_Improve_The_Real_Secret_Behind_AI's_final.mp4
+Duration: 18.184833
+Category: educational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\claude\04_Why_AI_Takes_Years_to_Improve_The_Real_Secret_Behind_AI's_Progress.mp4
+
+Title: How to Find the Perfect AI Style References in 20 Minutes
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\05_How_to_Find_the_Perfect_AI_Style_References_in_20_Minutes_final.mp4
+Duration: 17.250567
+Category: educational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\claude\05_How_to_Find_the_Perfect_AI_Style_References_in_20_Minutes.mp4
+
+Title: How to Generate 30-Second AI Videos with One Prompt
+Final video: D:\AI Journey\LocalVideoAI\output\final\claude\06_How_to_Generate_30-Second_AI_Videos_with_One_Prompt_final.mp4
+Duration: 17.650967
+Category: educational
+Score: 8
+B-roll: D:\AI Journey\LocalVideoAI\output\clips\claude\06_How_to_Generate_30-Second_AI_Videos_with_One_Prompt.mp4
+
+Pipeline completed.
+
+2026-11-20 12:23:46,475 | INFO | COMPLETED: Final clip production (217.83 seconds)
+2026-11-20 12:23:46,476 | INFO | Processing report: D:\AI Journey\LocalVideoAI\output\pipeline_results\claude_full_pipeline_report.json
+2026-11-20 12:23:46,476 | INFO | ============================================================
+2026-11-20 12:23:46,476 | INFO | FULL PIPELINE COMPLETED SUCCESSFULLY
+2026-11-20 12:23:46,476 | INFO | Total processing time: 1881.53 seconds

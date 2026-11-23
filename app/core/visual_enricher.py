@@ -17,6 +17,8 @@ class VisualEnricher:
     def enrich(self, highlights_data, visual_data):
 
         frames = visual_data.get("frames", [])
+        sampling_interval = float(visual_data.get("sampling_interval", 2))
+        tolerance = min(5.0, sampling_interval * 0.5)
 
         enriched_highlights = []
 
@@ -25,11 +27,30 @@ class VisualEnricher:
             start = float(highlight["start"])
             end = float(highlight["end"])
 
+            # 1. Match frames strictly inside the highlight window
             matched_frames = [
                 frame
                 for frame in frames
                 if start <= float(frame.get("timestamp", -1)) <= end
             ]
+
+            # 2. If no frames strictly inside, expand by tolerance (for higher sampling intervals)
+            if not matched_frames and frames:
+                matched_frames = [
+                    frame
+                    for frame in frames
+                    if (start - tolerance) <= float(frame.get("timestamp", -1)) <= (end + tolerance)
+                ]
+
+            # 3. If still none, match the single nearest frame within one sampling interval
+            if not matched_frames and frames:
+                midpoint = (start + end) / 2.0
+                closest = min(
+                    frames,
+                    key=lambda f: abs(float(f.get("timestamp", -999)) - midpoint)
+                )
+                if abs(float(closest.get("timestamp", -999)) - midpoint) <= sampling_interval:
+                    matched_frames = [closest]
 
             if matched_frames:
 

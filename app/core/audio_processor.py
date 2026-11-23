@@ -1,7 +1,15 @@
 
 import json
+import os
 import subprocess
+import sys
 from pathlib import Path
+
+# Ensure UTF-8 output on Windows consoles
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from faster_whisper import WhisperModel
 
@@ -43,6 +51,8 @@ class AudioProcessor:
             command,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=True
         )
 
@@ -107,10 +117,17 @@ class AudioProcessor:
                 "words": words
             })
 
-            print(
-                f"[{segment.start:.2f}s - {segment.end:.2f}s] "
-                f"{segment.text.strip()}"
-            )
+            try:
+                print(
+                    f"[{segment.start:.2f}s - {segment.end:.2f}s] "
+                    f"{segment.text.strip()}"
+                )
+            except Exception:
+                safe_text = segment.text.strip().encode("ascii", errors="replace").decode("ascii")
+                print(
+                    f"[{segment.start:.2f}s - {segment.end:.2f}s] "
+                    f"{safe_text}"
+                )
 
         transcript = {
             "language": info.language,

@@ -29,7 +29,9 @@ class BrollComposer:
         result = subprocess.run(
             command,
             capture_output=True,
-            text=True
+            text=True,
+            encoding="utf-8",
+            errors="replace"
         )
 
         if result.returncode != 0:
@@ -53,6 +55,8 @@ class BrollComposer:
             command,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=True
         )
 
@@ -84,9 +88,12 @@ class BrollComposer:
             if timestamp is None or not filename:
                 continue
 
-            relative_time = float(timestamp) - clip_start
+            raw_relative = float(timestamp) - clip_start
 
-            if not 0 <= relative_time < clip_duration:
+            # If the frame was captured close to the clip window, clamp inside the clip
+            if -3.0 <= raw_relative < (clip_duration + 3.0):
+                relative_time = max(0.0, min(max(0.0, clip_duration - self.broll_duration), raw_relative))
+            else:
                 continue
 
             image_path = self.frames_root / self.current_video_name / filename

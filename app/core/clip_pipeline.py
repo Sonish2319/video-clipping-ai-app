@@ -2,7 +2,14 @@
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+# Ensure UTF-8 output on Windows consoles
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from clip_generator import ClipGenerator
 from video_formatter import VideoFormatter
@@ -60,7 +67,7 @@ class ClipPipeline:
 
         return path
 
-    def run(self, video_path, transcript_path, highlights_path):
+    def run(self, video_path, transcript_path, highlights_path, subtitle_mode="animated"):
 
         video_path = Path(video_path).resolve()
         transcript_path = Path(transcript_path).resolve()
@@ -79,6 +86,7 @@ class ClipPipeline:
             highlights = json.load(file)
 
         print(f"\nSOURCE VIDEO: {video_name}")
+        print(f"SUBTITLE MERGE MODE: {subtitle_mode.upper()}")
 
         # STEP 1: CLIP EXTRACTION
         print("\n===== STEP 1: CLIP EXTRACTION =====")
@@ -194,21 +202,33 @@ class ClipPipeline:
                 "Animated caption generation"
             )
 
-            # STEP 6: ANIMATED SUBTITLE RENDERING
-            print("\nSTEP 6: ANIMATED SUBTITLE RENDERING")
-
+            # STEP 6: SUBTITLE MERGING (DEFAULT: ANIMATED SUBTITLES)
             final_name = f"{safe_name}_final.mp4"
 
-            final_path = self.animated_subtitle_renderer.render(
-                str(vertical_path),
-                str(animated_json_path),
-                final_name
-            )
-
-            final_path = self.verify_output(
-                final_path,
-                "Animated subtitle rendering"
-            )
+            if subtitle_mode == "animated":
+                print("\nSTEP 6: MERGING ANIMATED SUBTITLES")
+                final_path = self.animated_subtitle_renderer.render(
+                    str(vertical_path),
+                    str(animated_json_path),
+                    final_name,
+                    video_name=video_name
+                )
+                final_path = self.verify_output(
+                    final_path,
+                    "Animated subtitle rendering"
+                )
+            else:
+                print("\nSTEP 6: MERGING STANDARD SUBTITLES")
+                final_path = self.subtitle_burner.burn(
+                    str(vertical_path),
+                    str(subtitle_path),
+                    final_name,
+                    video_name=video_name
+                )
+                final_path = self.verify_output(
+                    final_path,
+                    "Standard subtitle burning"
+                )
 
             # COLLECT RESULTS
             final_results.append({
@@ -304,6 +324,12 @@ if __name__ == "__main__":
     parser.add_argument("video")
     parser.add_argument("transcript")
     parser.add_argument("highlights")
+    parser.add_argument(
+        "--subtitle-mode",
+        choices=["animated", "standard"],
+        default="animated",
+        help="Subtitle merge mode: 'animated' (word-by-word highlighted) or 'standard' (static SRT). Default: animated"
+    )
 
     args = parser.parse_args()
 
@@ -316,7 +342,8 @@ if __name__ == "__main__":
     results = pipeline.run(
         args.video,
         args.transcript,
-        args.highlights
+        args.highlights,
+        subtitle_mode=args.subtitle_mode
     )
 
     print("\n===== FINAL PRODUCTION SUMMARY =====")

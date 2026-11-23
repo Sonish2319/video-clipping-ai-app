@@ -4,7 +4,14 @@ import subprocess
 import argparse
 import tempfile
 import math
+import sys
 from pathlib import Path
+
+# Ensure UTF-8 output on Windows consoles
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -16,10 +23,19 @@ class AnimatedSubtitleRenderer:
         self.project_root = Path(__file__).resolve().parents[2]
 
         self.output_root = (
-            self.project_root / "output" / "animated_subtitles"
+            self.project_root / "output" / "final"
+        )
+
+        self.temp_root = (
+            self.project_root / "output" / "subtitles" / "temp"
         )
 
         self.output_root.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+        self.temp_root.mkdir(
             parents=True,
             exist_ok=True
         )
@@ -40,6 +56,7 @@ class AnimatedSubtitleRenderer:
         self.bottom_position = 0.76
 
         self.animation_duration = 0.15
+        self.selected_font_path = None
 
     def load_caption_data(self, json_path):
 
@@ -49,24 +66,57 @@ class AnimatedSubtitleRenderer:
             raise FileNotFoundError(json_path)
 
         with open(json_path, "r", encoding="utf-8") as file:
-            return json.load(file)
+            data = json.load(file)
+
+        # Detect CJK or non-Latin glyphs
+        is_cjk = any(
+            '\u4e00' <= char <= '\u9fff' or '\u3040' <= char <= '\u30ff' or '\uac00' <= char <= '\ud7af'
+            for c in data.get("captions", [])
+            for w in c.get("words", [])
+            for char in w.get("text", "")
+        )
+
+        if is_cjk:
+            cjk_fonts = [
+                Path("C:/Windows/Fonts/YuGothB.ttc"),
+                Path("C:/Windows/Fonts/msgothic.ttc"),
+                Path("C:/Windows/Fonts/meiryo.ttc")
+            ]
+            for f in cjk_fonts:
+                if f.exists():
+                    self.selected_font_path = f
+                    break
+        else:
+            self.selected_font_path = Path("C:/Windows/Fonts/arialbd.ttf")
+
+        return data
 
     def get_font(self, size=None):
 
         size = size or self.font_size
 
-        font_paths = [
+        font_paths = []
+        if self.selected_font_path and self.selected_font_path.exists():
+            font_paths.append(self.selected_font_path)
+
+        font_paths.extend([
             Path("C:/Windows/Fonts/arialbd.ttf"),
-            Path("C:/Windows/Fonts/Arial.ttf")
-        ]
+            Path("C:/Windows/Fonts/Arial.ttf"),
+            Path("C:/Windows/Fonts/YuGothB.ttc"),
+            Path("C:/Windows/Fonts/msgothic.ttc"),
+            Path("C:/Windows/Fonts/segoeui.ttf")
+        ])
 
         for font_path in font_paths:
 
             if font_path.exists():
-                return ImageFont.truetype(
-                    str(font_path),
-                    size
-                )
+                try:
+                    return ImageFont.truetype(
+                        str(font_path),
+                        size
+                    )
+                except Exception:
+                    continue
 
         return ImageFont.load_default()
 
@@ -250,7 +300,9 @@ class AnimatedSubtitleRenderer:
         result = subprocess.run(
             command,
             capture_output=True,
-            text=True
+            text=True,
+            encoding="utf-8",
+            errors="replace"
         )
 
         if result.returncode != 0:
@@ -359,7 +411,9 @@ class AnimatedSubtitleRenderer:
         self,
         video_path,
         caption_json,
-        output_filename
+        output_filename,
+        video_name=None,
+        output_dir=None
     ):
 
         video_path = Path(video_path).resolve()
@@ -369,10 +423,18 @@ class AnimatedSubtitleRenderer:
 
         data = self.load_caption_data(caption_json)
 
-        output_path = self.output_root / output_filename
+        if output_dir:
+            target_dir = Path(output_dir)
+        elif video_name:
+            target_dir = self.output_root / video_name
+        else:
+            target_dir = self.output_root
+
+        target_dir.mkdir(parents=True, exist_ok=True)
+        output_path = target_dir / output_filename
 
         with tempfile.TemporaryDirectory(
-            dir=self.output_root
+            dir=self.temp_root
         ) as temp_directory:
 
             temp_dir = Path(temp_directory)
