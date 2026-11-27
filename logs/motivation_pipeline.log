@@ -1,0 +1,127 @@
+2026-11-24 22:40:33,137 | INFO | Dynamic frame interval selected: 10s (video duration: 314.8s)
+2026-11-24 22:40:33,138 | INFO | ============================================================
+2026-11-24 22:40:33,138 | INFO | STARTING: Audio transcription
+2026-11-24 22:40:33,138 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\audio_processor.py D:\AI Journey\LocalVideoAI\input\motivation.mp4
+2026-11-24 22:41:29,354 | INFO | 
+===== AUDIO EXTRACTION =====
+Audio extracted: D:\AI Journey\LocalVideoAI\output\audio\motivation.wav
+
+===== SPEECH TRANSCRIPTION =====
+Loading Whisper Small INT8 model...
+Whisper model loaded.
+Starting transcription...
+[1.36s - 5.32s] If you want to change the world, start off by making your bed.
+[9.43s - 14.11s] If you make your bed every morning, you will have accomplished the first task of the day.
+[15.05s - 19.43s] It will give you a small sense of pride, and it will encourage you to do another task,
+[19.73s - 21.65s] and another, and another.
+[22.43s - 26.15s] And by the end of the day, that one task completed will have turned into many tasks
+[26.15s - 26.55s] completed.
+[27.23s - 31.59s] Making your bed will also reinforce the fact that the little things in life matter.
+[32.17s - 36.69s] If you can't do the little things right, you'll never be able to do the big things right.
+[37.39s - 42.03s] And if by chance you have a miserable day, you will come home to a bed that is made,
+[44.21s - 44.83s] that you made.
+[45.95s - 49.23s] And a made bed gives you encouragement that tomorrow will be better.
+[50.25s - 52.35s] I've been a Navy SEAL for 36 years.
+[53.09s - 57.91s] Every morning in SEAL training, my instructors, who at the time were all Vietnam veterans,
+[58.87s - 60.25s] would show up in my barracks room,
+[60.89s - 63.13s] and the first thing they'd do was inspect my bed.
+[63.93s - 67.69s] If you did it right, the corners would be square, the covers would be pulled tight,
+[68.29s - 73.05s] the pillow centered just under the headboard, and the extra blanket folded neatly at the foot of the rack.
+[74.01s - 79.39s] It was a simple task, mundane at best, but every morning we were required
+[79.99s - 81.41s] to make our bed to perfection.
+[82.25s - 84.95s] It seemed a little ridiculous at the time, particularly in light of the fact
+[84.95s - 89.63s] that we were aspiring to be real warriors, tough, battle-hardened SEALs,
+[90.17s - 95.43s] but the wisdom of this simple act has been proven to me many times over.
+[98.73s - 101.11s] It matters not whether you ever served a day in uniform.
+[101.75s - 105.11s] It matters not your gender, your ethnic or religious background,
+[105.37s - 107.19s] your orientation, or your social status.
+[107.97s - 111.71s] Our struggles in this world are similar, and the lessons to overcome those struggles
+[111.71s - 116.29s] and to move forward, changing ourselves and changing the world around us
+[116.29s - 117.93s] will apply equally to all.
+[121.12s - 125.22s] If you think it's hard to change the lives of 10 people, change their lives forever,
+[126.00s - 126.70s] you're wrong.
+[127.26s - 129.42s] I saw it happen every day in Iraq and Afghanistan,
+[130.44s - 134.10s] but changing the world can happen anywhere, and anyone can do it.
+[134.78s - 137.26s] So what starts here can indeed change the world.
+[138.70s - 141.30s] You will likely fail often, and it will be painful.
+[142.08s - 143.16s] It will be discouraging.
+[143.72s - 146.28s] At times it will test you to your very core.
+[151.82s - 156.72s] At that darkest moment of the mission is a time when you need to be calm,
+[157.40s - 162.58s] when you must be calm, when you must be composed, when all your tactical skills,
+[162.72s - 166.88s] your physical power, and your inner strength must be brought to bear.
+[167.90s - 173.48s] If you want to change the world, you must be your very best in the darkest moments.
+[176.19s - 181.55s] If I have learned anything in my time traveling the world, it is the power of hope,
+[182.21s - 186.27s] the power of one person, a Washington, a Lincoln, King, Mandela,
+[186.95s - 189.47s] and even a young girl from Pakistan, Malala,
+[189.95s - 193.71s] one person can change the world by giving people hope.
+[195.59s - 197.59s] Start each day with a task completed.
+[198.19s - 199.99s] Find someone to help you through life.
+[200.23s - 201.35s] Respect everyone.
+[202.09s - 204.43s] Know that life is not fair and that you will fail often.
+[205.07s - 208.51s] But if you take some risks, step up when the times are the toughest,
+[209.07s - 212.81s] face down the bullies, lift up the downtrodden, and never ever give up.
+[213.31s - 218.11s] If you do these things, the next generation and the generations that follow
+[218.11s - 221.05s] will live in a world far better than the one we have today.
+[221.63s - 226.65s] And what started here will indeed have changed the world for the better.
+[228.64s - 234.16s] Finally, in SEAL training there's a bell, a brass bell that hangs in the center of the
+[234.16s - 236.02s] compound for all the students to see.
+[236.62s - 239.34s] All you have to do to quit is ring the bell.
+[240.14s - 243.56s] Ring the bell and you no longer have to wake up at five o'clock.
+[243.72s - 247.68s] Ring the bell and you no longer have to be in the freezing cold swims.
+[248.28s - 252.44s] Ring the bell and you no longer have to do the runs, the obstacle course, the PT,
+[253.24s - 256.92s] and you no longer have to endure the hardships of training.
+[258.16s - 260.22s] All you have to do is ring the bell to get out.
+[266.39s - 274.12s] If you want to change the world, don't ever, ever ring the bell.
+
+===== TRANSCRIPT SAVING =====
+JSON: D:\AI Journey\LocalVideoAI\output\transcripts\motivation.json
+TXT: D:\AI Journey\LocalVideoAI\output\transcripts\motivation.txt
+
+Processing completed successfully.
+
+2026-11-24 22:41:29,355 | INFO | COMPLETED: Audio transcription (56.22 seconds)
+2026-11-24 22:41:29,356 | INFO | ============================================================
+2026-11-24 22:41:29,356 | INFO | STARTING: Frame sampling
+2026-11-24 22:41:29,356 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_sampler.py D:\AI Journey\LocalVideoAI\input\motivation.mp4 --interval 10
+2026-11-24 22:41:30,783 | INFO | Using specified frame interval: 10s
+Extracting representative video frames every 10s...
+Successfully extracted 31 frames.
+frame_001.jpg -> 0.00 seconds
+frame_002.jpg -> 10.00 seconds
+frame_003.jpg -> 20.00 seconds
+frame_004.jpg -> 30.00 seconds
+frame_005.jpg -> 40.00 seconds
+frame_006.jpg -> 50.00 seconds
+frame_007.jpg -> 60.00 seconds
+frame_008.jpg -> 70.00 seconds
+frame_009.jpg -> 80.00 seconds
+frame_010.jpg -> 90.00 seconds
+frame_011.jpg -> 100.00 seconds
+frame_012.jpg -> 110.00 seconds
+frame_013.jpg -> 120.00 seconds
+frame_014.jpg -> 130.00 seconds
+frame_015.jpg -> 140.00 seconds
+frame_016.jpg -> 150.00 seconds
+frame_017.jpg -> 160.00 seconds
+frame_018.jpg -> 170.00 seconds
+frame_019.jpg -> 180.00 seconds
+frame_020.jpg -> 190.00 seconds
+frame_021.jpg -> 200.00 seconds
+frame_022.jpg -> 210.00 seconds
+frame_023.jpg -> 220.00 seconds
+frame_024.jpg -> 230.00 seconds
+frame_025.jpg -> 240.00 seconds
+frame_026.jpg -> 250.00 seconds
+frame_027.jpg -> 260.00 seconds
+frame_028.jpg -> 270.00 seconds
+frame_029.jpg -> 280.00 seconds
+frame_030.jpg -> 290.00 seconds
+frame_031.jpg -> 300.00 seconds
+
+Frame sampling completed.
+Total frames: 31
+
+2026-11-24 22:41:30,783 | INFO | COMPLETED: Frame sampling (1.43 seconds)
+2026-11-24 22:41:30,783 | INFO | ============================================================
+2026-11-24 22:41:30,784 | INFO | STARTING: Visual frame analysis
+2026-11-24 22:41:30,784 | INFO | COMMAND: D:\AI Journey\LocalVideoAI\.venv\Scripts\python.exe D:\AI Journey\LocalVideoAI\app\core\frame_analyzer.py D:\AI Journey\LocalVideoAI\output\frames\motivation --interval 10

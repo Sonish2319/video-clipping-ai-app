@@ -19,9 +19,15 @@ if hasattr(sys.stderr, "reconfigure"):
 
 class FullVideoPipeline:
 
-    def __init__(self, video_path, frame_interval=None, min_duration=10.0, max_duration=20.0, subtitle_mode="animated"):
+    def __init__(self, video_path, frame_interval=None, min_duration=10.0, max_duration=20.0, subtitle_mode="animated", quality="720p"):
 
         self.project_root = Path(__file__).resolve().parents[2]
+
+        from video_downloader import VideoDownloader
+        if VideoDownloader.is_url(str(video_path)):
+            downloader = VideoDownloader()
+            video_path = downloader.download(str(video_path), quality=quality)
+
         self.video_path = Path(video_path).resolve()
 
         self.video_name = self.video_path.stem
@@ -120,29 +126,33 @@ class FullVideoPipeline:
         return float(data["format"]["duration"])
 
     @staticmethod
-    def calculate_dynamic_interval(duration_seconds):
+    def calculate_dynamic_interval(duration_seconds, target_max_frames=30):
         """
-        Dynamically determine frame sampling interval based on video duration:
-        - <= 60s (under 1 min):   2s interval  (~15-30 frames, e.g. 50s -> 25 frames)
-        - <= 180s (1 - 3 mins):   5s interval  (~15-36 frames, e.g. 2 mins -> 24 frames)
-        - <= 360s (3 - 6 mins):   10s interval (~20-36 frames, e.g. 5 mins -> 30 frames)
-        - <= 900s (6 - 15 mins):  15s interval (~24-60 frames, e.g. 10 mins -> 40 frames)
-        - <= 1800s (15 - 30 mins): 25s interval (~36-72 frames, e.g. 20 mins -> 48 frames)
-        - > 1800s (> 30 mins):    30s - 60s interval (max ~60 frames)
+        Dynamically determine frame sampling interval based on video duration
+        to prevent local Ollama vision model processing bottlenecks:
+        - <= 60s (under 1 min):    3s interval  (~10-20 frames)
+        - <= 180s (1 - 3 mins):    6s interval  (~20-30 frames, e.g. 2 mins -> 20 frames)
+        - <= 360s (3 - 6 mins):    10s interval (~18-36 frames, e.g. 5 mins -> 30 frames)
+        - <= 600s (6 - 10 mins):   20s interval (~18-30 frames, e.g. 10 mins -> 30 frames)
+        - <= 900s (10 - 15 mins):  30s interval (~20-30 frames, e.g. 15 mins -> 30 frames)
+        - <= 1800s (15 - 30 mins): 45s interval (~20-40 frames, e.g. 20 mins -> 26 frames)
+        - > 1800s (> 30 mins):     60s - 120s interval (capped at ~30 frames)
         """
         d = float(duration_seconds)
         if d <= 60:
-            return 2
+            return 3
         elif d <= 180:
-            return 5
+            return 6
         elif d <= 360:
             return 10
+        elif d <= 600:
+            return 20
         elif d <= 900:
-            return 15
+            return 30
         elif d <= 1800:
-            return 25
+            return 45
         else:
-            return max(30, min(60, int(round(d / 45))))
+            return max(60, int(round(d / target_max_frames)))
 
     def run_command(self, stage, script, arguments):
 
@@ -470,7 +480,22 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "video",
-        help="Path to source video"
+        nargs="?",
+        default=None,
+        help="Path to source video or YouTube URL (leave empty to prompt interactively)"
+    )
+
+    parser.add_argument(
+        "--url",
+        default=None,
+        help="YouTube video URL to download"
+    )
+
+    parser.add_argument(
+        "--quality",
+        choices=["480p", "720p", "480", "720"],
+        default=None,
+        help="Video download quality (480p or 720p, default: 720p)"
     )
 
     parser.add_argument(
@@ -503,8 +528,28 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    from video_downloader import VideoDownloader
+    downloader = VideoDownloader()
+
+    video_target = args.url or args.video
+
+    if not video_target:
+        # Prompt user interactively for YouTube link and quality
+        video_path, _ = downloader.prompt_user_input()
+    elif VideoDownloader.is_url(str(video_target)):
+        quality = args.quality or "720p"
+        video_path = downloader.download(video_target, quality=quality)
+    else:
+        video_path = Path(video_target)
+        if not video_path.exists():
+            if "youtube" in str(video_target) or "youtu.be" in str(video_target):
+                quality = args.quality or "720p"
+                video_path = downloader.download(video_target, quality=quality)
+            else:
+                raise FileNotFoundError(f"Video file not found: {video_path}")
+
     pipeline = FullVideoPipeline(
-        args.video,
+        video_path,
         frame_interval=args.interval,
         min_duration=args.min_duration,
         max_duration=args.max_duration,

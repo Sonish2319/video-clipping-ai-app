@@ -62,12 +62,27 @@ class HighlightDetector:
 
         # Build compact, human-readable timestamped transcript lines
         transcript_lines = []
+        last_clean_text = None
+        consecutive_repeats = 0
+
         for segment in segments:
             start_s = float(segment.get("start", 0))
             end_s = float(segment.get("end", 0))
             text = segment.get("text", "").strip()
-            if text:
-                transcript_lines.append(f"[{start_s:.2f}s - {end_s:.2f}s] {text}")
+            if not text:
+                continue
+
+            # Suppress Whisper audio noise hallucination loops (e.g. repeated crowd chant/noise > 2 times)
+            clean_text = text.lower().strip()
+            if clean_text == last_clean_text:
+                consecutive_repeats += 1
+                if consecutive_repeats > 2:
+                    continue
+            else:
+                last_clean_text = clean_text
+                consecutive_repeats = 1
+
+            transcript_lines.append(f"[{start_s:.2f}s - {end_s:.2f}s] {text}")
 
         transcript_text = "\n".join(transcript_lines)
 

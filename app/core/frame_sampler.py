@@ -47,29 +47,33 @@ class FrameSampler:
         return float(data["format"]["duration"])
 
     @staticmethod
-    def calculate_dynamic_interval(duration_seconds):
+    def calculate_dynamic_interval(duration_seconds, target_max_frames=30):
         """
-        Dynamically determine frame sampling interval based on video duration:
-        - <= 60s (under 1 min):   2s interval  (~15-30 frames, e.g. 50s -> 25 frames)
-        - <= 180s (1 - 3 mins):   5s interval  (~15-36 frames, e.g. 2 mins -> 24 frames)
-        - <= 360s (3 - 6 mins):   10s interval (~20-36 frames, e.g. 5 mins -> 30 frames)
-        - <= 900s (6 - 15 mins):  15s interval (~24-60 frames, e.g. 10 mins -> 40 frames)
-        - <= 1800s (15 - 30 mins): 25s interval (~36-72 frames, e.g. 20 mins -> 48 frames)
-        - > 1800s (> 30 mins):    30s - 60s interval (max ~60 frames)
+        Dynamically determine frame sampling interval based on video duration
+        to prevent local Ollama vision model processing bottlenecks:
+        - <= 60s (under 1 min):    3s interval  (~10-20 frames)
+        - <= 180s (1 - 3 mins):    6s interval  (~20-30 frames, e.g. 2 mins -> 20 frames)
+        - <= 360s (3 - 6 mins):    10s interval (~18-36 frames, e.g. 5 mins -> 30 frames)
+        - <= 600s (6 - 10 mins):   20s interval (~18-30 frames, e.g. 10 mins -> 30 frames)
+        - <= 900s (10 - 15 mins):  30s interval (~20-30 frames, e.g. 15 mins -> 30 frames)
+        - <= 1800s (15 - 30 mins): 45s interval (~20-40 frames, e.g. 20 mins -> 26 frames)
+        - > 1800s (> 30 mins):     60s - 120s interval (capped at ~30 frames)
         """
         d = float(duration_seconds)
         if d <= 60:
-            return 2
+            return 3
         elif d <= 180:
-            return 5
+            return 6
         elif d <= 360:
             return 10
+        elif d <= 600:
+            return 20
         elif d <= 900:
-            return 15
+            return 30
         elif d <= 1800:
-            return 25
+            return 45
         else:
-            return max(30, min(60, int(round(d / 45))))
+            return max(60, int(round(d / target_max_frames)))
 
     def sample_frames(
         self,

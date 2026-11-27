@@ -10,11 +10,13 @@ class OllamaClient:
         self,
         model="qwen3:4b",
         base_url="http://localhost:11434",
-        num_ctx=16384
+        num_ctx=8192,
+        timeout=600
     ):
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.num_ctx = num_ctx
+        self.timeout = timeout
 
     def generate(self, prompt):
 
@@ -43,7 +45,7 @@ class OllamaClient:
         try:
             with urllib.request.urlopen(
                 request,
-                timeout=180
+                timeout=self.timeout
             ) as response:
 
                 result = json.loads(
@@ -87,7 +89,7 @@ class OllamaClient:
 
             with urllib.request.urlopen(
                 request,
-                timeout=180
+                timeout=self.timeout
             ) as response:
 
                 result = json.loads(
